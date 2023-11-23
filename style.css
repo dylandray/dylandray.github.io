@@ -29,3 +29,10 @@ header {
 .category-nav a:hover {
     color: #ddd;
 }
+.large-text {
+    font-size: 30px; /* Larger text for headings */
+}
+
+.small-text {
+    font-size: 14px; /* Smaller text for paragraphs */
+}
