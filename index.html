@@ -1,11 +1,32 @@
+
+To display categories on your website, you can create a navigation menu or a dedicated section that lists the different categories. Here's a basic example of how you can implement this in HTML and CSS:
+
+1. HTML Structure for Categories
+You can create a navigation bar or a sidebar depending on your layout preference. Here's a simple example of a navigation bar with categories:
+
+html
+Copy code
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <b>"This is my portfolio"</b>
+
+<header>
+    <nav>
+        <ul class="category-nav">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="path/to/your/CV.pdf" target="_blank">My CV</a></li>
+        </ul>
+    </nav>
+</header>
+
+<b>"Test ! c'est mon portfolio"</b>
+
 </body>
 </html>
