@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-image: url("LeDDylan.github.io/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
     background-size: cover; /* This will make sure that your background covers the whole page */
-    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-repeat: no-repeat; /* This will prevent the image from repeatin */
     background-attachment: fixed; /* This will fix the background image during scrolling */
 }
 
