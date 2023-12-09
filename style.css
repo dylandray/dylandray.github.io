@@ -1,5 +1,9 @@
 body {
     font-family: Arial, sans-serif;
+    background-image: url("abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
+    background-size: cover; /* This will make sure that your background covers the whole page */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-attachment: fixed; /* This will fix the background image during scrolling */
 }
 
 header {
@@ -29,6 +33,7 @@ header {
 .category-nav a:hover {
     color: #ddd;
 }
+
 .large-text {
     font-size: 30px; /* Larger text for headings */
 }
@@ -37,4 +42,3 @@ header {
     font-size: 14px; /* Smaller text for paragraphs */
 }
 
-background-image: url("abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
