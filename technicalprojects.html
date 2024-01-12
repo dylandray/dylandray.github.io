@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dylan Dray</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="category-nav">
+                <li><a href="index.html" id="Homepage">Accueil</a></li>
+                <li><a href="technicalprojects.html" id = "Projects">Mes projets</a></li>
+                <li><a href="asso.html" id = "Associatif">Associatif</a></li>
+                <li><a href="moncv.html" id = "Resume/CV"> CV/Resume </a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="paragraph-container10">
+    <p> Cliquez sur le projet qui vous intéresse </p>
+</div>
+
+<div class = "paragraph-container11">
+    <p>
+        <a href="#mon-site" class = "hidden-link">Mon site (HTML, CSS, JavaScript)</a><br>
+        <br>
+        <a href="#musee-vr" class = "hidden-link">Musée VR (C#, Unity)</a><br>
+        <br>
+        <a href="#porton-mask" class = "hidden-link">Port'on MASK (Python, SQL, Reconnaissance Faciale, Analyse vidéo, Raspbian, Domotique)</a><br>
+        <br>
+        <a href="#smartdream-pillow" class = "hidden-link">SmartDream Pillow (Arduino)</a><br>
+        <br>
+        _________________________________________________________________________________________________________________________
+    </p>
+</div>
+    <div class = "paragraph-containerMonSite" id="mon-site">
+<p class = "large-text">Mon Site</p>
+        <img src ="">
+        <p class = "small-text">J'ai décidé d'améliorer mes compétences en web, et quoi de mieux que faire un site pour y arriver. Mon apprentissage s'est fais de manière autodidacte
+        j'ai suivi une formation rapide sur Openclassroom, tout en m'aidant en parallèle de chatGPT pour apprendre de zéro le HTML et le CSS. J'ai pour
+        projet de faire une nouvelle section "Blog" qui servira à réaliser ma propre veille technologique ! Restez à l'affut !</p>
+    </div>
+
+
+    <div class = "paragraph-containerMusee" id="musee-vr">
+        <p class = "large-text">Musée VR</p>
+        <img src ="MuseeVR.png" class = "image-redimensionnee">
+        <p class = "small-text">[PROJET EN COURS] Ce projet est réalisé dans le cadre de ma 2nde année en école d'ingénieurs. Il consiste en la réalisation
+        d'un musée à monde ouvert regroupant diverses oeuvres tout autour de la méditerranée. Ce projet est en collaboration avec 4 autres étudiants.<br> Je m'occupe, à titre personnel,
+        de l'élaboration du Gameplay, du scénario, de l'User Interface (UI) et de tout ce qui touche au code C#.</p>
+    </div>
+
+    <div class = "paragraph-containerPorton" id="porton-mask">
+        <p class = "large-text">Port'On Mask<p class = "small-text"><a href = "Porton_Mask_Pres.pdf" download class ="hidden-link">Cliquez ici pour télécharger la présentation du projet</a>
+<br>        <iframe src="Porton_Mask_Pres.pdf" left = "0%" width="30%" height="320px">
+        </iframe>
+
+        <p class = "large-text2"> 1st Version: Mask detection & Door opening</p>
+
+        <p class = "small-text"> La première version du Port'On Mask a été réalisé dans le cadre de mon projet de classe prépa, durant la pandémie du COVID-19.
+        répondant au thème de "Santé et Prévention".
+            <br>
+            <br>
+        Le principe de base était simple: Disposer cet appareil devant des hôpitaux principalement, qui à l'époque
+        ,manquant de personnel soignant, se retrouvait dans l'obligation de mettre des soignants à l'entrée des bâtiments, des services hospitaliers, afin de vérifier
+        le port correct du masque par les visiteurs.
+        <br>
+        Le Port'On Mask V1 analysait donc de manière automatique un flux vidéo, afin de déterminer si une personne portait correctement son
+        masque chirurgical, et ouvrait la porte si c'était le cas. Pour ce faire, j'ai utilisé le module OpenCV en Python, qui m'a permit de détecter
+            les éléments essentiels à la détection du port du masque (nez et bouche) dans un visage. Afin d'optimiser la recherche,
+            j'ai normalisé l'intensité des images, ajouté un filtre temporel (moyenne mobile).
+        <br><br>
+        Les résultats furent probant, le programme reconnaissait le port du masque (ou du moins,
+        dans cette version, l'absence de nez et de bouche) et ouvrait la maquette d'une porte de manière automatique, à l'aide d'un raspberry Pi et de sa Picaméra.
+    </p>
+        <img src="mask1.png">
+    <br>
+        <p class = "large-text2"> 2nd Version: Reconnaissance d'identité, Base de données et améliorations</p>
+        <p class = "small-text"> La seconde version du Port'On Mask a été réalisé en 2023, dans le cadre de ma 1ère année d'études
+    d'Ingénieurs. Une expérience personnelle que j'ai vécu dans un centre de santé m'a encouragé à reprendre ce projet et à l'améliorer, projet
+        rentrant parfaitement dans le thème d'un projet qui m'était imposé à l'ESILV : Créer
+        un outil qui résouds un problème que vous avez rencontré dans votre propre  </p>
+    <p class = "small-text"> En effet, lors d'une visite dans un centre de visite j'ai pu observer une mauvaise
+    gestion des flux, une secrétaire débordée et des patients perdus. Je me suis dis qu'incorporer un
+    système de reconnaissance faciale masquée (car le masque était toujours obligatoire dans ce lieu)
+    reliant l'identité d'une personne à son profil patient, bien que portant le masque, tout en lui indiquant des indications
+    précises de lieu du rendez-vous dans le bâtiment, avec le nom du médecin, l'heure.
+    <br>
+    <br>
+    Dans un premier temps, j'ai amélioré la détection en détectant la couleur du masque ainsi que la forme du masque.
+    Une fois la détection accomplie, il faut désormais la reconnaître, lier ce visage à une identité. Dans la pratique,
+    si c'est la première fois que la personne se rend dans le centre de santé, elle devra passer par la secrétaire normal où
+    elle donnera son identité et la secrétaire s'occupera de relier l'identité au visage de la personne dans la base de donnée.
+    À partir de la seconde fois, la personne est enregistrée. Dès lors, lorsqu'elle passera devant la caméra à l'entrée, le
+    système la reconnaîtra, lui ouvrira la porte et lui indiquera sur un écran le lieu de son rendez-vous, ainsi que les informations relatifs préalablement remplie par la prise de
+    rendez-vous.
+    <br>
+        <br> Côté technique, j'ai constitué une base de donnée de visages accessibles sur le net. Je leur ai rajouté un masque à l'aide d'une
+        intelligence artificielle. Dans un second temps, avec mon modèle Haarcascade, j'ai gardé les images où un
+        visage était clairement visible et détectable. Ensuite, j'ai appliqué le modèle dlib afin de reconnaître la position
+        des yeux et des sourcils, ce qui m'a permis de nettoyer la base de donnée des photos de mauvaise qualité, inclinés etc..
+        Désormais, des distances caractéristiques sont relevées sur les images restantes, afin de déterminer l'identité d'une personne.
+        <br> Les distances caractéristiques ne suffisant pas à déterminer l'identité d'une personne masquée, j'ai réfléchi à plusieurs idées
+        qui permettraient d'améliorer cette reconnaissance. Je vous invite à télécharger le pdf pour + d'informations sur les hypothèses et
+        conditions d'utilisation que j'ai retenu pour mon système.
+    </p>
+
+    </div>
+
+    <div class = "paragraph-containerPillow"id="smartdream-pillow">
+        <p class = "large-text">SmartDream Pillow</p>
+        <p class = "small-text">SmartDream Pillow est un projet développé durant ma 1ère année d'école d'Ingénieurs, dans le cadre d'un Projet Innovant à Impact Positif (PIIP).
+        <br>
+            Le but était de simuler la création d'une startup et d'un produit innovant. Ayant du mal à me réveiller les matins, j'ai fais
+        émerger l'idée d'un oreiller connecté à mon groupe de travail, idée qui a été retenue.
+        <br><br>Le principe est simple, un oreiller connecté qui réveille au meilleur moment possible, pour toujours se réveiller avec le sourire. De plus, de nombreux
+        capteurs sont présents sur l'oreiller afin de relever différentes statistiques utiles à la santé, comme le taux d'oxygène, le pouls..
+        Nous n'avons pas réussis à concevoir un oreiller vraiment confortable contenant les capteurs, mais une maquette a été réalisée.
+        J'ai principalement occupé les rôles de développeur C++ et de scrum master à l'aide de Jira.
+            <br>J'ai donc pu travailler sur du Deep Learning, à l'aide de Tensorflow for Arduino. </p>
+        <br>
+        <br>
+        <img src = "Couss1.png" class = "image-redimensionnee">
+        <img src = "Couss2.png" class="image-redimensionnee">
+    </div>
+
+<div class="language-container">
+        <button id="englishBtn" class="language-button" data-lang="en"></button>
+        <button id="frenchBtn" class="language-button" data-lang="fr"></button>
+</div>
+
+</body>
+<script src="language2.js"></script>
+
+<script>
+    // Function to handle smooth scrolling
+    function scrollToSection(targetId) {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // Add click event listeners to the project links
+    document.addEventListener('DOMContentLoaded', function () {
+        const projectLinks = document.querySelectorAll('a[href^="#"]');
+        projectLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+            });
+        });
+    });
+</script>
+
+
+</html>
