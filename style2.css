@@ -1,0 +1,154 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow: hidden;
+}
+
+header {
+    background-color: white;
+    opacity: 1;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4vh; /* Using vh unit */
+    z-index: 1000;
+}
+
+.category-nav {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.category-nav li {
+    display: inline;
+    margin-right: 2vw; /* Using vw unit */
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 120%; /* Using vw unit */
+}
+
+.category-nav a:hover {
+    color: white;
+}
+
+.small-text {
+    font-size: 1.4vw; /* Using vw unit */
+}
+
+/* Apply similar viewport unit adjustments to other elements */
+.paragraph-container1 {
+    font-family: "Bodoni MT";
+    position: absolute;
+    color: white;
+    top: 100px; /* Using vh unit */
+    left: 36vw; /* Using vw unit */
+    width: 64.5vw; /* Using vw unit */
+    font-size: 3vw; /* Using vw unit */
+    display: flex;
+}
+
+/* Continue applying vw and vh units to the rest of your elements */
+
+.image-redimensionnee {
+    width: 25vw; /* Responsive width using vw */
+    height: auto; /* Maintain aspect ratio */
+    }
+
+.image-redimensionnee2 {
+    width: 6vw;
+    height: auto;
+}
+.image-redimensionnee3 {
+    width: 5.5vw;
+    height: auto;
+}
+.image-container111 {
+    position: fixed;
+    top: 10%;
+    left: 3%;
+}
+.image-container112 {
+    position: fixed;
+    top: 10%;
+    left: 29%;
+}
+
+.centered-container {
+    font-family: "Bodoni MT";
+    position: absolute;
+    color: white;
+    top: 53px; /* Adjusted to viewport height */
+    left: 37%; /* Adjusted to viewport width */
+    width: 70vw; /* Adjusted to viewport width */
+    font-size: 5.5vw; /* Adjusted to viewport width */
+}
+
+.language-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1010;
+
+}
+.Prés {
+    position: fixed;
+    top:38%;
+    left: 30%;
+    color: white;
+    width: 70vw;
+    font-size: 1.5vw;
+}
+.language-button {
+    font-family: "Arial Black";
+    cursor: pointer;
+    width: 4vw; /* Adjusted to viewport width */
+    height: 3.8vh; /* Adjusted to viewport height */
+    outline: none;
+    z-index: 1010;
+
+}
+.image-container-LGit {
+    position: fixed;
+    top: 87%;
+    left: 80%;
+}
+
+#englishBtn {
+    background-image: url('ukus.jpg');
+    background-size: cover;
+    z-index: 1010;
+
+}
+
+#frenchBtn {
+    background-image: url('france.jpg');
+    background-size: cover;
+    z-index: 1010;
+
+}
+.hidden-link {
+    text-decoration: white;
+    color: white;
+}
+.small-text {
+    font-size: 14px; /* Smaller text for paragraphs */
+}
+
+
+.hidden-link-large {
+    text-decoration: none;
+    width: 100%;
+    color: white;}
+
