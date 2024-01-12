@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow: hidden;
+}
+
+header {
+    background-color: white;
+    opacity: 1;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4vh; /* Using vh unit */
+    z-index: 1000;
+}
+
+.category-nav {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.category-nav li {
+    display: inline;
+    margin-right: 2vw; /* Using vw unit */
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.category-nav a:hover {
+    color: white;
+}
+
+.small-text {
+    font-size: 1.4vw; /* Using vw unit */
+}
+
+/* Apply similar viewport unit adjustments to other elements */
+.paragraph-container1 {
+    font-family: "Bodoni MT";
+    position: fixed;
+    color: white;
+    top: 17vh; /* Using vh unit */
+    left: 34vw; /* Using vw unit */
+    width: 63vw; /* Using vw unit */
+    font-size: 4.5vw; /* Using vw unit */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Continue applying vw and vh units to the rest of your elements */
+
+.image-redimensionnee, .image-redimensionnee2 {
+    width: 35vw; /* Responsive width using vw */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 350px; /* Maximum width in pixels */
+}
+
+/* Continue with the rest of your CSS, adjusting as needed with vw and vh units */
+
+/* No media queries needed if the entire layout scales proportionally */
+.centered-container {
+    font-family: "Bodoni MT";
+    position: fixed;
+    color: white;
+    top: 4vh; /* Adjusted to viewport height */
+    left: 40vw; /* Adjusted to viewport width */
+    width: 70vw; /* Adjusted to viewport width */
+    font-size: 5.5vw; /* Adjusted to viewport width */
+}
+
+.language-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1010;
+
+}
+
+.language-button {
+    font-family: "Arial Black";
+    cursor: pointer;
+    width: 4vw; /* Adjusted to viewport width */
+    height: 3.8vh; /* Adjusted to viewport height */
+    outline: none;
+    z-index: 1010;
+
+}
+
+#englishBtn {
+    background-image: url('ukus.jpg');
+    background-size: cover;
+    z-index: 1010;
+
+}
+
+#frenchBtn {
+    background-image: url('france.jpg');
+    background-size: cover;
+    z-index: 1010;
+
+}
+
+.paragraph-containerENG, .paragraph-containerFR {
+    font-family: "Bodoni MT";
+    position: fixed;
+    color: white;
+    font-size: 3vw; /* Adjusted to viewport width */
+}
+
+.paragraph-containerENG {
+    top: 13vh; /* Adjusted to viewport height */
+    left: 58vw; /* Adjusted to viewport width */
+}
+
+.paragraph-containerFR {
+    top: 13vh; /* Adjusted to viewport height */
+    left: 6vw; /* Adjusted to viewport width */
+}
+.hidden-link {
+    text-decoration: white;
+    color: white;
+}
+
+.DLClick {
+    font-family: "Bodoni MT";
+    position: fixed;
+    color: white;
+    top: 8vh; /* Adjusted to viewport height */
+    font-size: 2.3vw; /* Adjusted to viewport width */
+}
+
+.pdfeng, .pdffr {
+    position: fixed;
+    top: 22vh; /* Adjusted to viewport height */
+    width: 46vw; /* Adjusted to viewport width */
+    height: auto;
+}
+
+.pdfeng { left: 52vw; /* Adjusted to viewport width */ }
+.pdffr { left: 1vw; /* Adjusted to viewport width */ }
+
