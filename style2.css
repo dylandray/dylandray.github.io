@@ -1,10 +1,30 @@
+*{
+    font-family: "Poppins","Bodoni MT","Arial Black", sans-serif;
+}
+
+p {
+    text-align: justify;
+}
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-    overflow: hidden;
+    min-height: 200vh;
+    min-width: 220vh;
+    background: radial-gradient(ellipse at bottom, black -10%, darkslateblue 105%);
+    overflow-y: auto; /* Hide the vertical scrollbar */
+    overflow-x: auto;}
+
+@media (min-width:1200px) {
+    body {
+        overflow-x: hidden; /* Hide scrollbar for larger screens */
+    }
+}
+
+@media (min-width: 1200px){
+    body {
+        overflow-y: hidden; /* Hide scrollbar for larger screens */
+    }
 }
 
 header {
@@ -15,7 +35,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 4vh; /* Using vh unit */
+    height: 25px;
     z-index: 1000;
 }
 
@@ -46,52 +66,35 @@ header {
     font-size: 1.4vw; /* Using vw unit */
 }
 
-/* Apply similar viewport unit adjustments to other elements */
-.paragraph-container1 {
-    font-family: "Bodoni MT";
+.centered-container {
+    font-family: "Bodoni MT", sans-serif;
     position: absolute;
     color: white;
-    top: 100px; /* Using vh unit */
-    left: 36vw; /* Using vw unit */
-    width: 64.5vw; /* Using vw unit */
-    font-size: 3vw; /* Using vw unit */
+    top: 9vh; /* Adjusted to viewport height */
+    left: 27%; /* Adjusted to viewport width */
+    width: 400px; /* Adjusted to viewport width */
+    font-size: 450%; /* Adjusted to viewport width */
     display: flex;
 }
 
-/* Continue applying vw and vh units to the rest of your elements */
-
-.image-redimensionnee {
-    width: 25vw; /* Responsive width using vw */
-    height: auto; /* Maintain aspect ratio */
-    }
-
-.image-redimensionnee2 {
-    width: 6vw;
-    height: auto;
-}
-.image-redimensionnee3 {
-    width: 5.5vw;
-    height: auto;
-}
-.image-container111 {
-    position: fixed;
-    top: 10%;
-    left: 3%;
-}
-.image-container112 {
-    position: fixed;
-    top: 10%;
-    left: 29%;
-}
-
-.centered-container {
-    font-family: "Bodoni MT";
+.paragraph-container1 {
     position: absolute;
     color: white;
-    top: 53px; /* Adjusted to viewport height */
-    left: 37%; /* Adjusted to viewport width */
-    width: 70vw; /* Adjusted to viewport width */
-    font-size: 5.5vw; /* Adjusted to viewport width */
+    top: 115px; /* Using vh unit */
+    left: 27%; /* Using vw unit */
+    width: 700px; /* Using vw unit */
+    font-size: 200%; /* Using vw unit */
+    display: flex;
+
+}
+
+.Prés {
+    position: absolute;
+    top:240px;
+    left: 27%;
+    color: white;
+    width: 850px;
+    font-size: 110%;
 }
 
 .language-container {
@@ -102,28 +105,64 @@ header {
     z-index: 1010;
 
 }
-.Prés {
+
+.image-redimensionnee {
+    max-width: 22%; /* Responsive width using vw */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-redimensionnee2esilv {
+    width: 10vh;
+    height: auto;
+}
+.image-redimensionnee2 {
+    width: 4.7vw;
+    height: auto;
+}
+.image-redimensionnee3 {
+    width: 7vh;
+    height: auto;
+}
+.image-container111 {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 100%;
+    height: 100%;
+}
+.image-container112 {
     position: fixed;
-    top:38%;
-    left: 30%;
-    color: white;
-    width: 70vw;
-    font-size: 1.5vw;
+    top: 10%;
+    right: -10px;
+}
+
+.bodoni {
+    font-family: "Bodoni MT", sans-serif;
+}
+.poppins {
+    font-family: "Poppins", sans-serif;
 }
 .language-button {
-    font-family: "Arial Black";
+    font-family: "Arial Black", sans-serif;
     cursor: pointer;
-    width: 4vw; /* Adjusted to viewport width */
-    height: 3.8vh; /* Adjusted to viewport height */
+    width: 50px; /* Adjusted to viewport width */
+    height: 25px; /* Adjusted to viewport height */
     outline: none;
     z-index: 1010;
 
 }
-.image-container-LGit {
+.image-container-Lin {
     position: fixed;
-    top: 87%;
-    left: 80%;
+    top: 92%;
+    left: 0vw;
 }
+
+.image-container-Git {
+    position: fixed;
+    top: 92%;
+    left: 10vh;
+}
+
 
 #englishBtn {
     background-image: url('ukus.jpg');
