@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 200vh;
+    min-height: 800px;
     min-width: 220vh;
     background: radial-gradient(ellipse at bottom, black -10%, darkslateblue 105%);
     overflow-y: auto; /* Hide the vertical scrollbar */
@@ -70,7 +70,7 @@ header {
     font-family: "Bodoni MT", sans-serif;
     position: absolute;
     color: white;
-    top: 9vh; /* Adjusted to viewport height */
+    top: 5%; /* Adjusted to viewport height */
     left: 27%; /* Adjusted to viewport width */
     width: 400px; /* Adjusted to viewport width */
     font-size: 450%; /* Adjusted to viewport width */
@@ -80,7 +80,7 @@ header {
 .paragraph-container1 {
     position: absolute;
     color: white;
-    top: 115px; /* Using vh unit */
+    top: 100px; /* Using vh unit */
     left: 27%; /* Using vw unit */
     width: 700px; /* Using vw unit */
     font-size: 200%; /* Using vw unit */
@@ -90,10 +90,10 @@ header {
 
 .Prés {
     position: absolute;
-    top:240px;
+    top:205px;
     left: 27%;
     color: white;
-    width: 850px;
+    width: 1050px;
     font-size: 110%;
 }
 
@@ -107,10 +107,12 @@ header {
 }
 
 .image-redimensionnee {
-    max-width: 22%; /* Responsive width using vw */
+    max-width: 20%; /* Responsive width using vw */
     height: auto; /* Maintain aspect ratio */
 }
-
+#Pres {
+    white-space: pre-line;
+}
 .image-redimensionnee2esilv {
     width: 10vh;
     height: auto;
@@ -137,7 +139,7 @@ header {
 }
 
 .bodoni {
-    font-family: "Bodoni MT", sans-serif;
+    font-family: "Baskerville Old Face", sans-serif;
 }
 .poppins {
     font-family: "Poppins", sans-serif;

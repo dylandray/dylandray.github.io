@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 3400px;
+    min-height: 3750px;
     background: radial-gradient(ellipse at bottom, black 0%, darkslateblue 100%);
     overflow-x: hidden;
     overflow-y: auto;
@@ -53,7 +53,7 @@ header {
 
 /* Apply similar viewport unit adjustments to other elements */
 .paragraph-container1 {
-    font-family: "Bodoni MT", sans-serif;
+    font-family: "Garamond", sans-serif;
     position: absolute;
     color: white;
     top: 100px; /* Using vh unit */
@@ -178,7 +178,7 @@ p { margin:0 }
 
 .image-container-Git {
     position: fixed;
-    top: 92.5%;
+    top: 92%;
     left: 10vh;
 }
 .image-redimensionnee3 {
@@ -186,13 +186,13 @@ p { margin:0 }
     height: auto;
 }
 .bodoni {
-    font-family: "Bodoni MT", sans-serif;
+    font-family: "Garamond", sans-serif;
 }
 .poppins {
     font-family: "Poppins", sans-serif;
 }
 .hidden-link-bodoni {
-    font-family: "Bodoni MT", sans-serif;
+    font-family: "Garamond", sans-serif;
     text-decoration: underline;
     color: white;
 }

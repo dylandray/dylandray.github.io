@@ -1,5 +1,5 @@
 *{
-    font-family: "Poppins","Bodoni MT","Arial Black", sans-serif;
+    font-family: "Poppins","Dido","Arial Black", sans-serif;
 }
 
 .justify {
@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 3050px;
+    min-height: 6500px;
     background: radial-gradient(ellipse at bottom, black 0%, darkslateblue 100%);
     overflow-x: hidden;
     overflow-y: auto;
@@ -19,6 +19,35 @@ body {
 p {
     text-align: justify;
 }
+#Pres {
+    white-space: pre-line;
+}
+#monsite2 {
+    white-space: pre-line;
+}
+#musee1 {
+    white-space: pre-line;
+}
+#musee2 {
+    white-space: pre-line;
+}
+#porton2 {
+    white-space: pre-line;
+}
+#porton4 {
+    white-space: pre-line;
+}
+#porton6 {
+    white-space: pre-line;
+}
+#porton7 {
+    white-space: pre-line;
+}
+
+#smartdreampillow1 {
+    white-space: pre-line;
+}
+
 
 header {
     background-color: white;
@@ -66,7 +95,7 @@ header {
 .paragraph-containerMusee {
     position: absolute;
     color: white;
-    top: 900px;
+    top: 1000px;
     font-size: 20px;
     width: 70%;
     text-align: center;
@@ -74,7 +103,7 @@ header {
 .paragraph-containerPorton {
     position: absolute;
     color: white;
-    top: 1550px;
+    top: 1700px;
     font-size: 20px;
     width: 70%;
     text-align: center;
@@ -82,7 +111,7 @@ header {
 .paragraph-containerPillow {
     position: relative;
     color: white;
-    top: 200vw;
+    top: 225vw;
     font-size: 20px;
     width: 70%;
 }
@@ -168,7 +197,7 @@ header {
 
 .image-container-Git {
     position: fixed;
-    top: 92.5%;
+    top: 92%;
     left: 10vh;
 }
 .image-redimensionnee3GL {
@@ -177,7 +206,7 @@ header {
 }
 
 .bodoni {
-    font-family: "Bodoni MT", sans-serif;
+    font-family: "Garamond", sans-serif;
 }
 .poppins {
     font-family: "Poppins", sans-serif;
@@ -186,30 +215,26 @@ header {
 .large-text {
     font-size: 50px; /* Larger text for headings */
     text-align: center;
-    text-decoration:underline;
 }
 
 .large-textmusee {
     font-size: 50px; /* Larger text for headings */
-    text-decoration:underline;
     text-align: center;
 }
 .large-textporton {
     font-size: 50px; /* Larger text for headings */
-    text-decoration:underline;
     text-align: center;
 }
 .large-textpillow{
     font-size: 50px;
     width: 80%;
-    text-decoration:underline;
     text-align: center;
     margin-left:10%;
 }
 
 .large-text2 {
     font-size: 50px;
-    font-family: "Bodoni MT", sans-serif;
+    font-family: "Garamond", sans-serif;
 }
 .small-text {
     font-size: 20px;
@@ -227,7 +252,7 @@ header {
     text-align: justify;
 }
 .hidden-link-bodoni {
-    font-family: "Bodoni MT", sans-serif;
+    font-family: "Garamond", sans-serif;
     text-decoration: underline;
     color: white;
 }
