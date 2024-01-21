@@ -94,3 +94,22 @@ function updateContentToFrench() {
 
     // Update other elements here
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const preferredLanguage = localStorage.getItem('preferredLanguage');
+    if (preferredLanguage) {
+        document.documentElement.lang = preferredLanguage;
+        if (preferredLanguage === "fr") {
+            updateContentToFrench();
+        } else {
+            updateContentToEnglish();
+        }
+    }
+});
+
+document.querySelectorAll('.language-button').forEach(function (button) {
+    button.addEventListener('click', function () {
+        const lang = this.getAttribute('data-lang');
+        localStorage.setItem('preferredLanguage', lang); // Store language preference
+        location.reload(); // Reload the page to apply the new language
+    });
+});

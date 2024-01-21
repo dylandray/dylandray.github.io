@@ -1,13 +1,13 @@
 *{
-    font-family: "Poppins","Bodoni MT","Arial Black", sans-serif;
+    font-family: "Poppins","Garamond";
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 3750px;
-    background: radial-gradient(ellipse at bottom, black 0%, darkslateblue 100%);
+    min-height: 5400px;
+    background: radial-gradient(ellipse at bottom, black -10%, darkslateblue 105%);
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -37,30 +37,18 @@ header {
 
 .category-nav li {
     display: inline;
-    margin-right: 2vw; /* Using vw unit */
+    margin-right: 1.7vw; /* Using vw unit */
 }
 
 .category-nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 120%; /* Using vw unit */
+    font-size: 95%; /* Using vw unit */
 }
 
 .category-nav a:hover {
     color: white;
-}
-
-/* Apply similar viewport unit adjustments to other elements */
-.paragraph-container1 {
-    font-family: "Garamond", sans-serif;
-    position: absolute;
-    color: white;
-    top: 100px; /* Using vh unit */
-    left: 36vw; /* Using vw unit */
-    width: 64.5vw; /* Using vw unit */
-    font-size: 3vw; /* Using vw unit */
-    display: flex;
 }
 
 .paragraph-container11 {
@@ -173,7 +161,7 @@ p { margin:0 }
 .image-container-Lin {
     position: fixed;
     top: 92%;
-    left: 0vw;
+    left: 0px;
 }
 
 .image-container-Git {
@@ -195,4 +183,33 @@ p { margin:0 }
     font-family: "Garamond", sans-serif;
     text-decoration: underline;
     color: white;
+}
+h1, h2 {
+    color: white;
+    font-family: "Garamond", sans-serif;
+    font-size: 35px;
+
+}
+
+p {
+    margin-bottom: 10px;
+    font-family: "Garamond", sans-serif;
+    font-size: 20px;
+
+}
+
+ul {
+    list-style-type: disc;
+    font-family: "Garamond", sans-serif;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 5px;
+    font-family: "Garamond", sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+#leoandco {
+    white-space: pre-line;
 }

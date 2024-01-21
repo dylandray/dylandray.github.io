@@ -50,7 +50,8 @@ const translations = {
             "The goal was to simulate the creation of a startup with an innovative product. To address waking up problems, I proposed the idea of a connected pillow to my working group, and we worked on it throughout the year.\n" +
             "\n" +
             "It is a connected pillow that wakes up the user at the optimal time to ensure a gentle awakening. Additionally, numerous sensors are integrated into the pillow to collect various health-related data, such as oxygen levels and pulse rate. We were unable to design a comfortable pillow incorporating the sensors, but we created a prototype. My main roles in the project were as a C++ developer and Scrum Master using Jira.\n" +
-            "Therefore, I had the opportunity to work on Deep Learning using Tensorflow for Arduino."
+            "Therefore, I had the opportunity to work on Deep Learning using Tensorflow for Arduino.",
+
     },
     fr: {
         Homepage: "Accueil",
@@ -94,7 +95,7 @@ const translations = {
             "L'objectif était de simuler la création d'une startup accompagnée d'un produit innovant. Pour pallier aux problèmes de réveil, j'ai proposé l'idée d'un oreiller connecté à mon groupe de travail, sur laquelle nous avons travaillé tout au long de l'année.\n" +
             "\n" +
             "Il s'agit d'un oreiller connecté qui réveille l'utilisateur au moment optimal pour lui garantir un réveil en douceur. De plus, de nombreux capteurs sont intégrés à l'oreiller pour collecter diverses données utiles pour la santé, telles que le taux d'oxygène et le pouls. Nous n'avons pas réussi à concevoir un oreiller confortable intégrant les capteurs, mais nous avons réalisé une maquette. J'ai principalement occupé les rôles de développeur en C++ et de Scrum Master en utilisant Jira.\n" +
-            "J'ai donc pu travailler sur du Deep Learning, à l'aide de Tensorflow for Arduino."
+            "J'ai donc pu travailler sur du Deep Learning, à l'aide de Tensorflow for Arduino.",
     }
 };
 
@@ -122,9 +123,9 @@ function updateContentToEnglish() {
     document.getElementById('monsite').textContent = translations.en.monsite;
     document.getElementById('musee').textContent = translations.en.musee;
     document.getElementById('porton').textContent = translations.en.porton;
-    document.getElementById('monsite1').textContent = translations.en.monsite1;
+    document.getElementById('monsite1').innerHTML = '<strong>' + translations.en.monsite1 + '</strong>';
     document.getElementById('monsite2').textContent = translations.en.monsite2;
-    document.getElementById('musee1').textContent = translations.en.musee1;
+    document.getElementById('musee1').innerHTML = '<strong>'+translations.en.musee1+'</strong>';
     document.getElementById('musee2').textContent = translations.en.musee2;
     document.getElementById('porton2').textContent = translations.en.porton2;
     document.getElementById('porton3').textContent = translations.en.porton3;
@@ -133,8 +134,9 @@ function updateContentToEnglish() {
     document.getElementById('porton6').textContent = translations.en.porton6;
     document.getElementById('porton7').textContent = translations.en.porton7;
     document.getElementById('smartdreampillow1').textContent = translations.en.smartdreampillow1;
-    document.getElementById('Click').textContent = translations.en.Click;
     document.getElementById('changeLanguageBtn').style.backgroundImage = `url('${translations.en.buttonImage}')`;
+
+
 
 }
 
@@ -146,9 +148,9 @@ function updateContentToFrench() {
     document.getElementById('monsite').textContent = translations.fr.monsite;
     document.getElementById('musee').textContent = translations.fr.musee;
     document.getElementById('porton').textContent = translations.fr.porton;
-    document.getElementById('monsite1').textContent = translations.fr.monsite1;
+    document.getElementById('monsite1').innerHTML = '<strong>' +  translations.fr.monsite1 + '</strong>';
     document.getElementById('monsite2').textContent = translations.fr.monsite2;
-    document.getElementById('musee1').textContent = translations.fr.musee1;
+    document.getElementById('musee1').innerHTML = '<strong>' + translations.fr.musee1 + '</strong>';
     document.getElementById('musee2').textContent = translations.fr.musee2;
     document.getElementById('porton2').textContent = translations.fr.porton2;
     document.getElementById('porton3').textContent = translations.fr.porton3;
@@ -157,7 +159,24 @@ function updateContentToFrench() {
     document.getElementById('porton6').textContent = translations.fr.porton6;
     document.getElementById('porton7').textContent = translations.fr.porton7;
     document.getElementById('smartdreampillow1').textContent = translations.fr.smartdreampillow1;
-    document.getElementById('Click').textContent = translations.fr.Click;
     document.getElementById('changeLanguageBtn').style.backgroundImage = `url('${translations.fr.buttonImage}')`;
-
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const preferredLanguage = localStorage.getItem('preferredLanguage');
+    if (preferredLanguage) {
+        document.documentElement.lang = preferredLanguage;
+        if (preferredLanguage === "fr") {
+            updateContentToFrench();
+        } else {
+            updateContentToEnglish();
+        }
+    }
+});
+
+document.querySelectorAll('.language-button').forEach(function (button) {
+    button.addEventListener('click', function () {
+        const lang = this.getAttribute('data-lang');
+        localStorage.setItem('preferredLanguage', lang); // Store language preference
+        location.reload(); // Reload the page to apply the new language
+    });
+});
