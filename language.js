@@ -1,6 +1,6 @@
 const translations = {
     en: {
-        studentInfo: "AI, Software Enginineering and data student at the École Supérieure d'Ingénieurs Léonard de Vinci",
+        studentInfo: "AI, Software Enginineering and data student at the École Supérieure d'Ingénieurs Léonard de Vinci - Paris",
         Homepage: "Homepage",
         Associatif: "Voluntary",
         Projects: "My projects",
@@ -23,7 +23,7 @@ const translations = {
             "I am actively seeking a 4/5-month internship opportunity in a large company, either in France or internationally, starting from April 2024."
     },
     fr: {
-        studentInfo: "Étudiant en IA, Software Engineering et data à l'École Supérieure d'Ingénieurs Léonard de Vinci",
+        studentInfo: "Étudiant en IA, Software Engineering et data à l'École Supérieure d'Ingénieurs Léonard de Vinci - Paris",
         Homepage: "Accueil",
         Associatif: "Associatif",
         Projects: "Mes projets",
