@@ -14,7 +14,7 @@ const translations = {
             "" +
             "" +
 
-            "My project is to create a new \"Blog\" section that will serve as a platform for my own technological research throughout my studies.",
+            "I plan to redo the site with a framework now that I have mastered the basics, so that it's more beautiful, as well as adding a new section \"Blog\" section that will serve as a platform for my own technological research throughout my studies.",
         musee1: "Mediterranean Museum VR",
         musee2: "\n" +
             "[PROJECT IN PROGRESS] This project is being carried out as part of my second year in an engineering school. It involves the creation of an open-world museum spanning the Mediterranean throughout different historical periods. This project is a collaboration with four other students. " +
@@ -66,7 +66,7 @@ const translations = {
         monsite2: "Le développement web m'a toujours rendu curieux, j'ai donc décidé de créer mon propre site internet afin de pouvoir apprendre le HTML, le CSS ainsi que le Javascript. J'ai suivi une formation rapide sur Openclassroom, tout en m'aidant en parallèle de chatGPT pour m'initier au HTML et au CSS. " +
             "\n" +
             "\n" +
-            "J'ai fait le choix de ne pas travailler avec un Framework afin d'avoir totalement la main sur ce que je faisais de A à Z, même si ça s'accompagnait de son lot d'embûches. C'est la raison pour laquelle le site n'est pas totalement optimisé selon l'appareil. J'ai pour projet de faire une nouvelle section \"Blog\" qui servira à réaliser ma propre veille technologique, tout au long de mes études",
+            "J'ai fait le choix de ne pas travailler avec un Framework afin d'avoir totalement la main sur ce que je faisais de A à Z, même si ça s'accompagnait de son lot d'embûches. C'est la raison pour laquelle le site n'est pas totalement optimisé selon l'appareil. J'ai pour projet de refaire le site avec un Framework maintenant que je maîtrise les bases, afin que ce soit + beau, ainsi qu'une nouvelle section \"Blog\" qui servira à réaliser ma propre veille technologique, tout au long de mes études",
         musee1: "Musée VR Méditerranée",
         musee2: "\n" +"[PROJET EN COURS] Ce projet est réalisé dans le cadre de ma seconde année en école d'ingénieurs. Il consiste en la réalisation d'un musée à monde ouvert entourant la méditerranée au fil des époques. Ce projet est en collaboration avec 4 autres étudiants.\n" +
             "\n" +
