@@ -10,7 +10,7 @@ const translations = {
         monsite1: "My website",
         monsite2: "Web development has always piqued my curiosity, so I decided to create my own website to learn HTML, CSS, and JavaScript. I followed a quick training course on Openclassroom, while also seeking assistance from ChatGPT to get started with HTML and CSS.\n" +
             "\n" +
-            "I chose not to work with a framework in order to have complete control over what I was doing from A to Z, even though it came with its fair share of challenges. " +
+            "I chose not to work with a framework in order to have complete control over what I was doing from A to Z, even though it came with its fair share of challenges. That's the reason the website isn't optimized well for different devices. " +
             "" +
             "" +
 
@@ -66,7 +66,7 @@ const translations = {
         monsite2: "Le développement web m'a toujours rendu curieux, j'ai donc décidé de créer mon propre site internet afin de pouvoir apprendre le HTML, le CSS ainsi que le Javascript. J'ai suivi une formation rapide sur Openclassroom, tout en m'aidant en parallèle de chatGPT pour m'initier au HTML et au CSS. " +
             "\n" +
             "\n" +
-            "J'ai fait le choix de ne pas travailler avec un Framework afin d'avoir totalement la main sur ce que je faisais de A à Z, même si ça s'accompagnait de son lot d'embûches. J'ai pour projet de faire une nouvelle section \"Blog\" qui servira à réaliser ma propre veille technologique, tout au long de mes études",
+            "J'ai fait le choix de ne pas travailler avec un Framework afin d'avoir totalement la main sur ce que je faisais de A à Z, même si ça s'accompagnait de son lot d'embûches. C'est la raison pour laquelle le site n'est pas totalement optimisé selon l'appareil. J'ai pour projet de faire une nouvelle section \"Blog\" qui servira à réaliser ma propre veille technologique, tout au long de mes études",
         musee1: "Musée VR Méditerranée",
         musee2: "\n" +"[PROJET EN COURS] Ce projet est réalisé dans le cadre de ma seconde année en école d'ingénieurs. Il consiste en la réalisation d'un musée à monde ouvert entourant la méditerranée au fil des époques. Ce projet est en collaboration avec 4 autres étudiants.\n" +
             "\n" +
