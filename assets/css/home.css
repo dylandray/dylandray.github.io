@@ -1,3 +1,7 @@
+/* ======================================================
+   home.css — Garamond bold titles, bigger everything,
+               styled language buttons & social icons
+   ====================================================== */
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -8,12 +12,12 @@
 body {
     font-family: "Poppins", sans-serif;
     background: radial-gradient(ellipse at bottom, black -10%, darkslateblue 105%);
-    height: 100vh;
+    min-height: 100vh;
     color: white;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-
+/* ---- Fixed header ---- */
 header {
     background-color: white;
     position: fixed;
@@ -41,6 +45,7 @@ header {
 
 .category-nav a:hover { color: #444; }
 
+/* ---- Language buttons — styled flags with hover ---- */
 .language-container {
     position: fixed;
     top: 6px;
@@ -71,17 +76,19 @@ header {
 #englishBtn { background-image: url('../images/ukus.jpg'); background-size: cover; background-position: center; }
 #frenchBtn  { background-image: url('../images/france.jpg'); background-size: cover; background-position: center; }
 
+/* ---- Page wrapper ---- */
 .page-content {
     max-width: 1050px;
     margin: 42px auto 0;
     padding: 22px 48px 12px;
-    height: calc(100vh - 42px);
+    min-height: calc(100vh - 42px);
     display: flex;
     flex-direction: column;
     gap: 16px;
-    overflow: hidden;
+    overflow: visible;
 }
 
+/* ---- Hero ---- */
 .hero {
     display: flex;
     gap: 44px;
@@ -104,6 +111,7 @@ header {
     gap: 14px;
 }
 
+/* Name — Garamond bold, très grand */
 .site-title {
     font-family: "Garamond", serif;
     font-size: clamp(44px, 6.5vw, 82px);
@@ -115,14 +123,16 @@ header {
 
 .hidden-link-large { text-decoration: none; color: white; }
 
+/* Tagline — Garamond bold lavande */
 .tagline {
     font-family: "Garamond", serif;
     font-size: clamp(16px, 1.6vw, 22px);
     line-height: 1.65;
     color: #d4c8f0;
-    font-style: bold;
+    font-weight: bold;
 }
 
+/* Intro — Poppins discret */
 .intro-text {
     font-family: "Poppins", sans-serif;
     font-size: clamp(12px, 1vw, 14px);
@@ -130,6 +140,7 @@ header {
     letter-spacing: 0.3px;
 }
 
+/* ---- Divider ---- */
 .divider {
     width: 100%;
     height: 1px;
@@ -137,11 +148,11 @@ header {
     flex-shrink: 0;
 }
 
+/* ---- Accordion ---- */
 .sections {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    flex: 1 1 0;
+    overflow: visible;
 }
 
 .accordion { border-bottom: 1px solid rgba(255,255,255,0.1); }
@@ -159,6 +170,7 @@ header {
 
 .accordion-header:hover { opacity: 0.65; }
 
+/* Titres accordéon — Garamond bold, même style que Port'On Mask */
 .accordion-title {
     font-family: "Garamond", serif;
     font-size: clamp(18px, 1.8vw, 26px);
@@ -196,6 +208,7 @@ header {
     padding: 4px 6px 0;
 }
 
+/* ---- Social icons — rounded, backdrop, hover lift ---- */
 .social-bar {
     position: fixed;
     bottom: 20px;
@@ -231,13 +244,45 @@ header {
     object-fit: contain;
 }
 
+/* ---- Font helpers ---- */
 .bodoni  { font-family: "Garamond", serif; }
 .poppins { font-family: "Poppins", sans-serif; }
 
-/*Responsivness*/
+/* ---- Responsive ---- */
 @media (max-width: 700px) {
     body { overflow: auto; height: auto; }
-    .page-content { overflow: auto; height: auto; padding: 16px; }
-    .hero { flex-direction: column; align-items: flex-start; }
+
+    .page-content {
+        overflow: auto;
+        height: auto;
+        padding: 16px 16px 80px;
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .profile-img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .site-title { font-size: 42px; }
+    .tagline    { font-size: 16px; }
+    .intro-text { font-size: 13px; }
+
+    /* Accordion titles must be visible on mobile */
+    .accordion-title {
+        font-size: 18px;
+        color: white;
+    }
+
+    .accordion-header { padding: 16px 6px; }
+
+    .accordion-body p { font-size: 14px; line-height: 1.7; }
+
     .accordion.open .accordion-body { max-height: 600px; }
 }

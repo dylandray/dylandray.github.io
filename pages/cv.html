@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Dylan Dray</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Dray - CV</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/cv.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/shared.css">
 </head>
@@ -14,7 +15,7 @@
                 <li><a href="../index.html" id="Homepage" class="poppins">Accueil</a></li>
                 <li><a href="projects.html" id="Projects" class="poppins">Mes projets</a></li>
                 <li><a href="associations.html" id="Associatif" class="poppins">Associatif</a></li>
-                <li><a href="cv.html" id="Resume/CV" class="poppins">CV/Resume</a></li>
+                <li><a href="cv.html" id="CV" class="poppins">CV/Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -24,34 +25,39 @@
         <button id="frenchBtn" class="language-button" data-lang="fr"></button>
     </div>
 
-    <div class="paragraph-containerENG">
-        <a href="../assets/docs/Resume_Dylan_Dray_ENG.pdf" download class="hidden-link">Click HERE to download my Resume (ENG)</a>
+    <div class="cv-layout">
+
+        <div class="cv-col">
+            <div class="cv-title">
+                <a href="../assets/docs/CV_Dylan_Dray_FR.pdf" download class="cv-download-link">
+                    Cliquez ici pour télécharger mon CV (FR)
+                </a>
+            </div>
+            <iframe class="cv-iframe" src="../assets/docs/CV_Dylan_Dray_FR.pdf"></iframe>
+        </div>
+
+        <div class="cv-col">
+            <div class="cv-title">
+                <a href="../assets/docs/Resume_Dylan_Dray_ENG.pdf" download class="cv-download-link">
+                    Click here to download my Resume (ENG)
+                </a>
+            </div>
+            <iframe class="cv-iframe" src="../assets/docs/Resume_Dylan_Dray_ENG.pdf"></iframe>
+        </div>
+
     </div>
 
-    <div class="pdfeng">
-        <iframe src="../assets/docs/Resume_Dylan_Dray_ENG.pdf" width="100%" height="500px"></iframe>
+    <!-- Social bar -->
+    <div class="social-bar">
+        <a href="https://www.linkedin.com/in/dylan-dray/" target="_blank" class="social-link" title="LinkedIn">
+            <img src="../assets/images/LinkedIn_icon.svg.png" class="social-icon" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/dylandray" target="_blank" class="social-link" title="GitHub">
+            <img src="../assets/images/github.png" class="social-icon" alt="Github">
+        </a>
     </div>
-
-    <div class="paragraph-containerFR">
-        <a href="../assets/docs/CV_Dylan_Dray_FR.pdf" download class="hidden-link">Cliquez ICI pour télécharger mon CV (FR)</a>
-    </div>
-
-    <div class="pdffr">
-        <iframe src="../assets/docs/CV_Dylan_Dray_FR.pdf" width="100%" height="500px"></iframe>
-    </div>
-
-    
 
     <script src="../assets/js/language-projects.js"></script>
-<!-- Social bar -->
-<div class="social-bar">
-    <a href="https://www.linkedin.com/in/dylan-dray/" target="_blank" class="social-link" title="LinkedIn">
-        <img src="../assets/images/LinkedIn_icon.svg.png" class="social-icon" alt="LinkedIn">
-    </a>
-    <a href="https://github.com/dylandray" target="_blank" class="social-link" title="GitHub">
-        <img src="../assets/images/github.png" class="social-icon" alt="Github">
-    </a>
-</div>
-<script src="../assets/js/flags.js"></script>
+    <script src="../assets/js/flags.js"></script>
 </body>
 </html>

@@ -16,11 +16,9 @@ const translations = {
 
             "I plan to redo the site with a framework now that I have mastered the basics, so that it's more beautiful, as well as adding a new section \"Blog\" section that will serve as a platform for my own technological research throughout my studies.",
         musee1: "Mediterranean Museum VR",
-        musee2: "\n" +
-            "[PROJECT IN PROGRESS] This project is being carried out as part of my second year in an engineering school. It involves the creation of an open-world museum spanning the Mediterranean throughout different historical periods. This project is a collaboration with four other students. " +
+        musee2: "Carried out as part of my second year in engineering school, in collaboration with 4 other students, this project involved the creation of an open-world museum exploring the Mediterranean region through different historical periods. Developed on Unity (C#), the project is now complete.\n" +
             "\n" +
-            "\n" +
-            "I personally handle the development of gameplay, the storyline, the User Interface (UI), and everything related to C# code on the Unity game engine. This section will be updated as I progress.",
+            "I was responsible for all UI and gameplay development, including the audio player bar (with play/pause/next controls, volume adjustment and playlist management), the zone-based spatial sound system, and the player's precise location tracking on the interactive map. I also developed all player movements and interactions within the VR environment.",
         porton2: "Click here to download the project presentation",
         porton3: "V1 : Mask detection & door opening",
         porton4:"The first version of the Port'On Mask was developed as part of my preparatory class project during the COVID-19 pandemic, addressing the theme of \"Health and Prevention.\"\n" +
@@ -68,9 +66,9 @@ const translations = {
             "\n" +
             "J'ai fait le choix de ne pas travailler avec un Framework afin d'avoir totalement la main sur ce que je faisais de A à Z, même si ça s'accompagnait de son lot d'embûches. C'est la raison pour laquelle le site n'est pas totalement optimisé selon l'appareil. J'ai pour projet de refaire le site avec un Framework maintenant que je maîtrise les bases, afin que ce soit + beau, ainsi qu'une nouvelle section \"Blog\" qui servira à réaliser ma propre veille technologique, tout au long de mes études",
         musee1: "Musée VR Méditerranée",
-        musee2: "\n" +"[PROJET EN COURS] Ce projet est réalisé dans le cadre de ma seconde année en école d'ingénieurs. Il consiste en la réalisation d'un musée à monde ouvert entourant la méditerranée au fil des époques. Ce projet est en collaboration avec 4 autres étudiants.\n" +
+        musee2: "Réalisé dans le cadre de ma seconde année en école d'ingénieurs, en collaboration avec 4 autres étudiants, ce projet consiste en la création d'un musée en monde ouvert explorant le pourtour méditerranéen à travers les époques. Développé sur Unity (C#), le projet est aujourd'hui terminé.\n" +
             "\n" +
-            "Je m'occupe, à titre personnel, de l'élaboration du Gameplay, du scénario, de l'User Interface (UI) et de tout ce qui touche au code C#, sur le moteur de jeu Unity. Cette section sera complétée au fur et à mesure de mon avancement.",
+            "En charge de l'ensemble de la partie UI et du gameplay, j'ai notamment conçu la barre de lecture audio (avec contrôles play/pause/suivant, réglage du volume et gestion de la playlist), le système de son spatialisé par zone, ainsi que la localisation précise du joueur sur la carte interactive. J'ai également développé l'ensemble des déplacements et des interactions joueur au sein de l'environnement VR.",
         porton2: "Cliquez ici pour télécharger la présentation du projet",
         porton3: "V1 : Détection du port du masque & ouverture d'une porte",
         porton4: "La première version du Port'On Mask a été réalisé dans le cadre de mon projet de classe prépa, durant la pandémie du COVID-19. répondant au thème de \"Santé et Prévention\".\n" +
