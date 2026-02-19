@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Dylan Dray</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/shared.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="category-nav">
+            <li><a href="index.html" id="Homepage" class="poppins">Accueil</a></li>
+            <li><a href="pages/projects.html" id="Projects" class="poppins">Mes projets</a></li>
+            <li><a href="pages/associations.html" id="Associatif" class="poppins">Associatif</a></li>
+            <li><a href="pages/cv.html" id="CV" class="poppins">CV/Resume</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="language-container">
+    <button id="englishBtn" class="language-button" data-lang="en"></button>
+    <button id="frenchBtn" class="language-button" data-lang="fr"></button>
+</div>
+
+<main class="page-content">
+
+    <!-- Hero -->
+    <div class="hero">
+        <img src="assets/images/photocv_vraie.jpg" class="profile-img" alt="Photo de Dylan Dray">
+        <div class="identity">
+            <h1 class="site-title">
+                <a href="index.html" class="hidden-link-large">Dylan Dray</a>
+            </h1>
+            <p id="studentInfo" class="tagline">Ingénieur en IA avec expérience internationale (France, Japon, États-Unis), spécialisé en Data, Machine Learning, IA générative &amp; LLM. Communication claire, curiosité, autonomie et forte adaptabilité.</p>
+            <p id="introText" class="intro-text">Sur ce site : mes projets, mes engagements associatifs et mon CV.</p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Accordion sections -->
+    <div class="sections">
+
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span id="acc1Title" class="accordion-title">De Marseille à l'international</span>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+                <p id="acc1Body">Originaire de Marseille, diplômé de l'ESILV Paris en Data &amp; Intelligence Artificielle. Mon parcours est guidé par une curiosité insatiable et une volonté constante de transformer des données complexes en solutions concrètes et performantes. Ce qui me plaît le + dans mon domaine, c'est voir le regard ébahi des gens quand je leur présente mes solutions.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span id="acc2Title" class="accordion-title">Expertise Technique &amp; Parcours</span>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+                <p id="acc2Body">Mon expérience s'est forgée à travers des projets d'envergure internationale. <strong>IA &amp; Deep Learning :</strong> expert en détection d'anomalies (97 % de précision) et en IA Générative — systèmes RAG et fine-tuning de LLMs. <strong>Software Engineering :</strong> profil full-stack de la donnée, entre web scraping, bases SQL et interfaces Flask.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span id="acc3Title" class="accordion-title">Réalisations &amp; Engagement</span>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+                <p id="acc3Body">Mon travail chez Bosch Corporation à Tokyo a été récompensé par un <em>Business Impact Excellence Award</em>, témoignant de ma capacité à allier rigueur technique et vision stratégique. Mon implication associative et ma veille technologique reflètent ma conviction que le partage de connaissances est le moteur de l'innovation.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span id="acc4Title" class="accordion-title">Profil Polyglotte &amp; Ouverture</span>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+                <p id="acc4Body">Travailler entre la France, le Japon et les États-Unis a affiné ma capacité d'adaptation. Je travaille quotidiennement en français et en anglais, avec une maîtrise avancée du japonais et des bases d'espagnol. Passionné de gastronomie, de jeux vidéo, de sport et engagé pour la cause animale.</p>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<!-- Social bar -->
+<div class="social-bar">
+    <a href="https://www.linkedin.com/in/dylan-dray/" target="_blank" class="social-link" title="LinkedIn">
+        <img src="assets/images/LinkedIn_icon.svg.png" class="social-icon" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/dylandray" target="_blank" class="social-link" title="GitHub">
+        <img src="assets/images/github.png" class="social-icon" alt="Github">
+    </a>
+</div>
+
+<script>
+function toggleAccordion(header) {
+    const accordion = header.parentElement;
+    const isOpen = accordion.classList.contains('open');
+    document.querySelectorAll('.accordion').forEach(a => a.classList.remove('open'));
+    if (!isOpen) accordion.classList.add('open');
+}
+</script>
+<script src="assets/js/flags.js"></script>
+<script src="assets/js/language-home.js"></script>
+</body>
+</html>
