@@ -1,6 +1,6 @@
 /* ======================================================
-   projects.css — Responsive, flow-based layout
-   No hardcoded pixel heights. No position: absolute hacks.
+   projects.css — Projects page
+   Header, nav, language buttons, social bar → shared.css
    ====================================================== */
 
 *, *::before, *::after {
@@ -17,70 +17,23 @@ body {
     overflow-x: hidden;
 }
 
-/* ---- Fixed header ---- */
-header {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 36px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.category-nav {
-    list-style: none;
-    display: flex;
-    gap: clamp(12px, 3vw, 40px);
-    padding: 0;
-    margin: 0;
-}
-
-.category-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: clamp(12px, 1.4vw, 18px);
-    white-space: nowrap;
-}
-
-.category-nav a:hover { color: #444; }
-
-/* ---- Language buttons (top-left, above header) ---- */
-.language-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    z-index: 1100;
-}
-
-.language-button {
-    cursor: pointer;
-    width: 50px;
-    height: 36px;
-    border: none;
-    outline: none;
-}
-
+/* Flag image paths (relative to pages/) */
 #englishBtn {
     background-image: url('../images/ukus.jpg');
     background-size: cover;
+    background-position: center;
 }
-
 #frenchBtn {
     background-image: url('../images/france.jpg');
     background-size: cover;
+    background-position: center;
 }
 
 /* ---- Main content wrapper ---- */
 .page-content {
     max-width: 860px;
     margin: 0 auto;
-    padding: 60px 24px 80px;  /* top: clears fixed header */
+    padding: 62px 24px 80px; /* 62px clears the 42px header */
 }
 
 /* ---- Table of contents ---- */
@@ -162,7 +115,7 @@ header {
 
 .small-text-poppins-justified { text-align: justify; }
 
-.bodoni { font-family: "Garamond", serif; }
+.bodoni  { font-family: "Garamond", serif; }
 .poppins { font-family: "Poppins", sans-serif; }
 
 /* ---- Pillow images side by side ---- */
@@ -180,31 +133,10 @@ header {
     height: auto;
 }
 
-/* ---- Social icons (fixed, bottom-left) ---- */
-.social-link {
-    position: fixed;
-    bottom: 16px;
-    z-index: 900;
-}
-
-.social-link--linkedin { left: 0; }
-.social-link--github   { left: 60px; }
-
-.social-icon {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-}
-
 /* ---- Responsive: mobile ---- */
 @media (max-width: 600px) {
     .page-content { padding: 56px 16px 60px; }
-
     .pdf-embed { height: 300px; }
-
     .pillow-images { flex-direction: column; align-items: center; }
     .project-img-half { width: 90%; max-width: none; }
-
-    .category-nav { gap: 8px; }
-    .category-nav a { font-size: 11px; }
 }

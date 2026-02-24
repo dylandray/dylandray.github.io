@@ -17,7 +17,7 @@ const translations = {
         introText: "Sur ce site : mes projets, mes engagements associatifs et mon CV.",
         Homepage: "Accueil", Associatif: "Associatif", Projects: "Mes projets", CV: "CV/Resume",
         acc1Title: "De Marseille à l'international",
-        acc1Body: "Originaire de Marseille, diplômé de l'ESILV Paris en Data & Intelligence Artificielle. Mon parcours est guidé par une curiosité insatiable et une volonté constante de transformer des données complexes en solutions concrètes et performantes. Ce qui me plaît le + dans mon domaine, c'est voir le regard ébahi des gens quand je leur présente mes solutions.",
+        acc1Body: "Originaire de <strong> Marseille </strong>, en passant par <strong>Paris</strong>, jusqu'à l'international <strong>(USA, Japon)</strong>, j'ai pu construire un profil d'ingénieur IA agile et tourné vers le résultat. Mon expérience à l'étranger a affiné ma vision : utiliser la donnée non pas comme une fin, mais comme un outil de transformation majeur. Qu'il s'agisse d'optimiser la détection d'anomalies industrielles ou de déployer des architectures LLM, je m'efforce de créer des outils qui surprennent par leur efficacité et leur simplicité d'usage.",
         acc2Title: "Expertise Technique & Parcours",
         acc2Body: "Mon expérience s'est forgée à travers des projets d'envergure internationale. <strong>IA & Deep Learning :</strong> expert en détection d'anomalies (97 % de précision) et en IA Générative (systèmes RAG et fine-tuning de LLMs). <strong>Software Engineering :</strong> profil full-stack de la donnée, entre web scraping, management API, bases SQL et interfaces Flask.",
         acc3Title: "Réalisations & Engagement",

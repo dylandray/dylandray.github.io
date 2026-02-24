@@ -1,8 +1,39 @@
 /* ======================================================
-   shared.css — Social bar & language buttons (all pages)
-   Used from root: assets/css/shared.css
-   Used from pages/: ../assets/css/shared.css
+   shared.css — Unified header, nav, language buttons, social bar
+   Loaded on every page. Individual CSS only adds page-specific styles.
    ====================================================== */
+
+/* ---- Fixed header ---- */
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-nav {
+    list-style: none;
+    display: flex;
+    gap: clamp(12px, 3vw, 40px);
+    padding: 0;
+    margin: 0;
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: clamp(12px, 1.4vw, 18px);
+    white-space: nowrap;
+}
+
+.category-nav a:hover { color: #444; }
 
 /* ---- Language buttons ---- */
 .language-container {
@@ -57,10 +88,7 @@
     transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
     box-shadow: 0 4px 14px rgba(0,0,0,0.3);
     text-decoration: none;
-    /* reset any position from individual CSS */
     position: static;
-    left: auto;
-    bottom: auto;
 }
 
 .social-bar .social-link:hover {
@@ -73,4 +101,12 @@
     width: 26px;
     height: 26px;
     object-fit: contain;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+    .category-nav { gap: 8px; }
+    .category-nav a { font-size: 11px; }
+    .language-container { top: 9px; left: 8px; }
+    .language-button { width: 28px; height: 20px; }
 }
