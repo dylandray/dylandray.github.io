@@ -49,7 +49,15 @@ const translations = {
             "\n" +
             "It is a connected pillow that wakes up the user at the optimal time to ensure a gentle awakening. Additionally, numerous sensors are integrated into the pillow to collect various health-related data, such as oxygen levels and pulse rate. We were unable to design a comfortable pillow incorporating the sensors, but we created a prototype. My main roles in the project were as a C++ developer and Scrum Master using Jira.\n" +
             "Therefore, I had the opportunity to work on Deep Learning using Tensorflow for Arduino.",
-
+        mlfastapi: "ML Model Deployment (FastAPI & Docker)",
+        mlfastapi1: "ML Model Deployment (FastAPI & Docker)",
+        mlfastapi2: "This project focuses on the containerization and deployment of a Machine Learning model. Using FastAPI, I developed a high-performance REST API to handle model requests, while Docker ensures consistent environments across development and production. The setup includes automated API documentation and optimized inference pipelines.",
+        topic_toc: "YouTube Topic Modeling (NLP, Python, Flask API)",
+        topic_title: "YouTube Topic Modeling",
+        topic_desc: "This project involves extracting and analyzing YouTube video data to identify latent themes using Topic Modeling techniques. By leveraging NLP libraries and algorithms like LDA or BERTopic, the system categorizes large volumes of text into coherent topics, providing insights into viewer sentiment and content trends.",
+        aixmath_toc: "AIxMath (Machine Learning & Mathematics)",
+        aixmath_title: "AIxMath",
+        aixmath_desc: "AIxMath is a project at the intersection of Artificial Intelligence and advanced mathematics. It explores the use of neural networks to solve complex mathematical problems and optimize numerical computations. The project highlights the synergy between algorithmic rigor and machine learning flexibility to tackle challenges in symbolic regression and mathematical modeling.",
     },
     fr: {
         Homepage: "Accueil",
@@ -94,6 +102,15 @@ const translations = {
             "\n" +
             "Il s'agit d'un oreiller connecté qui réveille l'utilisateur au moment optimal pour lui garantir un réveil en douceur. De plus, de nombreux capteurs sont intégrés à l'oreiller pour collecter diverses données utiles pour la santé, telles que le taux d'oxygène et le pouls. Nous n'avons pas réussi à concevoir un oreiller confortable intégrant les capteurs, mais nous avons réalisé une maquette. J'ai principalement occupé les rôles de développeur en C++ et de Scrum Master en utilisant Jira.\n" +
             "J'ai donc pu travailler sur du Deep Learning, à l'aide de Tensorflow for Arduino.",
+        mlfastapi: "Déploiement de Modèle ML (FastAPI & Docker)",
+        mlfastapi1: "Déploiement de Modèle ML (FastAPI & Docker)",
+        mlfastapi2: "Ce projet porte sur la conteneurisation et le déploiement d'un modèle de Machine Learning. En utilisant FastAPI, j'ai développé une API REST performante pour gérer les requêtes du modèle, tandis que Docker garantit la cohérence des environnements entre le développement et la production. La configuration inclut une documentation API automatisée et des pipelines d'inférence optimisés.",
+        topic_toc: "Topic Modeling sur YouTube (NLP, Python, API Flask)",
+        topic_title: "Topic Modeling sur YouTube",
+        topic_desc: "Ce projet consiste à extraire et analyser les données de vidéos YouTube pour identifier des thèmes latents grâce aux techniques de Topic Modeling. En utilisant des bibliothèques NLP et des algorithmes comme LDA ou BERTopic, le système catégorise de grands volumes de texte en sujets cohérents, offrant un aperçu des sentiments des spectateurs et des tendances de contenu.",
+        aixmath_toc: "AIxMath (Intelligence Artificielle & Mathématiques)",
+        aixmath_title: "AIxMath",
+        aixmath_desc: "AIxMath est un projet à l'intersection de l'Intelligence Artificielle et des mathématiques avancées. Il explore l'utilisation des réseaux de neurones pour résoudre des problèmes mathématiques complexes et optimiser les calculs numériques. Le projet met en avant la synergie entre la rigueur algorithmique et la flexibilité du machine learning pour relever des défis en régression symbolique et modélisation mathématique.",
     }
 };
 
@@ -132,7 +149,17 @@ function updateContentToEnglish() {
     document.getElementById('porton6').textContent = translations.en.porton6;
     document.getElementById('porton7').textContent = translations.en.porton7;
     document.getElementById('smartdreampillow1').textContent = translations.en.smartdreampillow1;
+    document.getElementById('topic-toc').textContent = translations.en.topic_toc;
+    document.getElementById('topic-title').innerHTML = '<strong>' + translations.en.topic_title + '</strong>';
+    document.getElementById('topic-desc').textContent = translations.en.topic_desc;
+    document.getElementById('fastapi-toc').textContent = translations.en.fastapi_toc;
+    document.getElementById('fastapi-title').innerHTML = '<strong>' + translations.en.fastapi_title + '</strong>';
+    document.getElementById('fastapi-desc').textContent = translations.en.fastapi_desc;
+    document.getElementById('aixmath-toc').textContent = translations.en.aixmath_toc;
+    document.getElementById('aixmath-title').innerHTML = '<strong>' + translations.en.aixmath_title + '</strong>';
+    document.getElementById('aixmath-desc').textContent = translations.en.aixmath_desc;
     document.getElementById('changeLanguageBtn').style.backgroundImage = `url('${translations.en.buttonImage}')`;
+
 
 
 
@@ -157,7 +184,17 @@ function updateContentToFrench() {
     document.getElementById('porton6').textContent = translations.fr.porton6;
     document.getElementById('porton7').textContent = translations.fr.porton7;
     document.getElementById('smartdreampillow1').textContent = translations.fr.smartdreampillow1;
+    document.getElementById('fastapi-toc').textContent = translations.fr.fastapi_toc;
+    document.getElementById('fastapi-title').innerHTML = '<strong>' + translations.fr.fastapi_title + '</strong>';
+    document.getElementById('fastapi-desc').textContent = translations.fr.fastapi_desc;
+    document.getElementById('topic-toc').textContent = translations.fr.topic_toc;
+    document.getElementById('topic-title').innerHTML = '<strong>' + translations.fr.topic_title + '</strong>';
+    document.getElementById('topic-desc').textContent = translations.fr.topic_desc;
+    document.getElementById('aixmath-toc').textContent = translations.fr.aixmath_toc;
+    document.getElementById('aixmath-title').innerHTML = '<strong>' + translations.fr.aixmath_title + '</strong>';
+    document.getElementById('aixmath-desc').textContent = translations.fr.aixmath_desc;
     document.getElementById('changeLanguageBtn').style.backgroundImage = `url('${translations.fr.buttonImage}')`;
+
 }
 document.addEventListener('DOMContentLoaded', () => {
     const preferredLanguage = localStorage.getItem('preferredLanguage');
