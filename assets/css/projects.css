@@ -3,17 +3,31 @@
    Header, nav, language buttons, social bar → shared.css
    ====================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* ---- CSS variables ---- */
+:root {
+    --accent:      #a78bfa;
+    --accent-dim:  rgba(167,139,250,0.18);
+    --divider:     rgba(255,255,255,0.10);
+    --text-body:   rgba(255,255,255,0.87);
+    --text-muted:  rgba(255,255,255,0.48);
+    --font-display: 'Inter', sans-serif;
+    --font-body:    'Inter', sans-serif;
+}
+
 body {
-    font-family: "Poppins", "Garamond", sans-serif;
-    background: radial-gradient(ellipse at bottom, black 0%, darkslateblue 100%);
+    font-family: var(--font-body);
+    font-weight: 300;
+    background: radial-gradient(ellipse at bottom, #08000f 0%, #1a0c5c 55%, #0c0025 100%);
     min-height: 100vh;
-    color: white;
+    color: var(--text-body);
     overflow-x: hidden;
 }
 
@@ -33,97 +47,191 @@ body {
 .page-content {
     max-width: 860px;
     margin: 0 auto;
-    padding: 62px 24px 80px; /* 62px clears the 42px header */
+    padding: 72px 28px 100px;
 }
 
-/* ---- Table of contents ---- */
+/* ======================================================
+   TABLE OF CONTENTS
+   ====================================================== */
 .toc {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    padding: 28px 36px 24px;
+    border: 1px solid var(--divider);
+    border-radius: 18px;
+    background: rgba(255,255,255,0.025);
+    backdrop-filter: blur(8px);
 }
 
 .toc-divider {
     border: none;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    margin-top: 16px;
+    border-top: 1px solid var(--divider);
+    margin-top: 14px;
 }
 
 .hidden-link-bodoni {
-    font-family: "Garamond", serif;
-    font-size: clamp(14px, 1.4vw, 20px);
-    text-decoration: underline;
-    color: white;
-    transition: opacity 0.2s;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: clamp(13px, 1.25vw, 15.5px);
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: color 0.22s ease, letter-spacing 0.22s ease;
+    position: relative;
+    display: inline-block;
+    padding: 2px 0;
 }
 
-.hidden-link-bodoni:hover { opacity: 0.7; }
+.hidden-link-bodoni::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width 0.28s ease;
+}
+
+.hidden-link-bodoni:hover {
+    color: #fff;
+    letter-spacing: 0.025em;
+}
+
+.hidden-link-bodoni:hover::after {
+    width: 70%;
+}
 
 /* ---- Scroll offset for fixed header ---- */
 section[id] {
     scroll-margin-top: 60px;
 }
 
-/* ---- Project sections ---- */
+/* ======================================================
+   PROJECT SECTIONS
+   ====================================================== */
 .project-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    margin-bottom: 60px;
+    gap: 26px;
+    margin-bottom: 76px;
 }
 
+/* ---- Titles ---- */
 .project-title {
-    font-family: "Garamond", serif;
-    font-size: clamp(28px, 4vw, 50px);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(26px, 3.8vw, 44px);
+    letter-spacing: -0.02em;
+    line-height: 1.15;
     text-align: center;
+    color: #fff;
 }
 
 .project-subtitle {
-    font-family: "Garamond", serif;
-    font-size: clamp(18px, 2.5vw, 32px);
-    text-align: center;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(14px, 1.8vw, 20px);
+    letter-spacing: -0.01em;
+    color: var(--accent);
     align-self: flex-start;
 }
 
-.project-img {
+/* ======================================================
+   BODY TEXT
+   ====================================================== */
+.small-text-poppins,
+.small-text-poppins-justified {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: clamp(14px, 1.35vw, 16.5px);
+    line-height: 1.85;
+    white-space: pre-line;
     width: 100%;
-    max-width: 500px;
-    height: auto;
-    display: block;
+    color: var(--text-body);
 }
 
+.small-text-poppins-justified {
+    text-align: justify;
+}
+
+/* Rich-text div containers (ML FastAPI, Topic Modeling) */
+.small-text-poppins-justified p {
+    margin-bottom: 1.1em;
+    text-align: justify;
+    line-height: 1.85;
+    font-size: clamp(14px, 1.35vw, 16.5px);
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.small-text-poppins-justified p:last-child {
+    margin-bottom: 0;
+}
+
+/* Bold/strong terms */
+.small-text-poppins-justified strong,
+.small-text-poppins strong {
+    font-weight: 500;
+    color: #fff;
+}
+
+/* ======================================================
+   LEGACY CLASS ALIASES
+   ====================================================== */
+.bodoni  { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; }.poppins { font-family: var(--font-body); }
+
+/* ======================================================
+   IMAGES
+   ====================================================== */
+.project-img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.38s ease, box-shadow 0.38s ease;
+}
+
+.project-img:hover {
+    transform: translateY(-5px) scale(1.012);
+    box-shadow: 0 24px 64px rgba(0,0,0,0.55),
+                0 0 0 1px rgba(167,139,250,0.22);
+}
+
+/* ---- PDF embed ---- */
 .pdf-embed {
     width: 100%;
     height: 500px;
     border: none;
+    border-radius: 12px;
 }
 
+/* ======================================================
+   SECTION DIVIDERS
+   ====================================================== */
 .section-divider {
     border: none;
-    border-top: 1px solid rgba(255,255,255,0.3);
     width: 100%;
-    margin-top: 20px;
+    margin-top: 24px;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--accent-dim) 25%,
+        var(--accent-dim) 75%,
+        transparent
+    );
 }
 
-/* ---- Text styles ---- */
-.small-text-poppins,
-.small-text-poppins-justified {
-    font-family: "Poppins", sans-serif;
-    font-size: clamp(14px, 1.4vw, 18px);
-    line-height: 1.7;
-    white-space: pre-line;
-    width: 100%;
-}
-
-.small-text-poppins-justified { text-align: justify; }
-
-.bodoni  { font-family: "Garamond", serif; }
-.poppins { font-family: "Poppins", sans-serif; }
-
-/* ---- Pillow images side by side ---- */
+/* ======================================================
+   PILLOW IMAGES (side by side)
+   ====================================================== */
 .pillow-images {
     display: flex;
     gap: 20px;
@@ -136,12 +244,23 @@ section[id] {
     width: 45%;
     max-width: 380px;
     height: auto;
+    border-radius: 12px;
+    transition: transform 0.38s ease, box-shadow 0.38s ease;
 }
 
-/* ---- Responsive: mobile ---- */
+.project-img-half:hover {
+    transform: translateY(-5px) scale(1.012);
+    box-shadow: 0 24px 64px rgba(0,0,0,0.55),
+                0 0 0 1px rgba(167,139,250,0.22);
+}
+
+/* ======================================================
+   RESPONSIVE — MOBILE
+   ====================================================== */
 @media (max-width: 600px) {
-    .page-content { padding: 56px 16px 60px; }
-    .pdf-embed { height: 300px; }
+    .page-content  { padding: 60px 18px 72px; }
+    .toc           { padding: 20px 20px 18px; }
+    .pdf-embed     { height: 300px; }
     .pillow-images { flex-direction: column; align-items: center; }
     .project-img-half { width: 90%; max-width: none; }
 }
