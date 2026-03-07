@@ -6,6 +6,58 @@
     <title>Dylan Dray - Mes Projets</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/projects.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/shared.css">
+    <style>
+        /* ---- Lightbox ---- */
+        .lightbox-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(4, 0, 18, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+            animation: lbFadeIn 0.25s ease;
+        }
+        .lightbox-overlay.active { display: flex; }
+        @keyframes lbFadeIn {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+        .lightbox-img {
+            max-width: 90vw;
+            max-height: 88vh;
+            border-radius: 14px;
+            box-shadow: 0 32px 100px rgba(0,0,0,0.75),
+                        0 0 0 1px rgba(167,139,250,0.30);
+            animation: lbZoomIn 0.28s cubic-bezier(0.22,1,0.36,1);
+            cursor: default;
+        }
+        @keyframes lbZoomIn {
+            from { transform: scale(0.88); opacity: 0; }
+            to   { transform: scale(1);    opacity: 1; }
+        }
+        .lightbox-close {
+            position: fixed;
+            top: 20px;
+            right: 24px;
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.6);
+            font-size: 32px;
+            line-height: 1;
+            cursor: pointer;
+            transition: color 0.2s ease, transform 0.2s ease;
+            z-index: 10000;
+        }
+        .lightbox-close:hover {
+            color: #fff;
+            transform: scale(1.15) rotate(90deg);
+        }
+        .project-img, .project-img-half { cursor: zoom-in; }
+    </style>
 </head>
 
 <body>
@@ -72,27 +124,23 @@
     </section>
 
     <!-- ML FastAPI project-->
-    <section id="ml-fastapi">
-    <h2 class="project-title" id="mlfastapi1">ML Model Deployment (FastAPI & Docker)</h2>
-    <p class="small-text-poppins-justified" id="mlfastapi2">
-        This project focuses on the containerization and deployment of a Machine Learning model. Using FastAPI, I developed a high-performance REST API to handle model requests, while Docker ensures consistent environments across development and production. The setup includes automated API documentation and optimized inference pipelines.
-    </p>
-        <img src="../assets/images/persoprojectml.png" class="project-img" alt="YouTube Topic Modeling Project" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 6px;">
-
-    <div class="project-media-container">
+    <section id="ml-fastapi" class="project-section">
+        <h2 class="project-title bodoni" id="mlfastapi1">ML Model Deployment (FastAPI &amp; Docker)</h2>
+        <div class="small-text-poppins-justified" id="mlfastapi2">
+            <p>La stack technique repose sur <strong>FastAPI</strong>, <strong>Docker</strong>, <strong>Uvicorn</strong> et <strong>Pydantic</strong>. Ce projet traite de la conteneurisation et du déploiement d'un modèle de <strong>Machine Learning</strong>. En m'appuyant sur <strong>FastAPI</strong>, j'ai développé une <strong>API REST</strong> performante pour gérer les requêtes, tandis que <strong>Docker</strong> assure la cohérence des environnements entre le développement et la production. L'ensemble inclut une documentation automatisée et des <strong>pipelines d'inférence</strong> optimisés.</p>
+            <p>Le choix de <strong>FastAPI</strong> s'est imposé par sa capacité à gérer l'<strong>asynchrone</strong> et sa rapidité d'exécution, surpassant des <strong>frameworks</strong> plus traditionnels. L'intégration de <strong>Pydantic</strong> permet de sécuriser les points d'entrée en effectuant une <strong>validation de schéma</strong> rigoureuse des données avant qu'elles n'atteignent le modèle, limitant ainsi les erreurs en production. Pour garantir une portabilité totale, l'application est encapsulée dans une <strong>image Docker</strong>. Cette approche résout les conflits de <strong>dépendances</strong> et simplifie le passage vers des infrastructures <strong>Cloud</strong> ou des serveurs dédiés sans modification du <strong>code source</strong>.</p>
+            <p>L'architecture privilégie l'efficacité opérationnelle en effectuant le <strong>chargement du modèle</strong> au lancement du <strong>serveur ASGI</strong>. Cela permet d'éliminer la <strong>latence</strong> lors de l'<strong>inférence</strong> sur des requêtes en temps réel. L'<strong>API</strong> expose également une interface <strong>Swagger UI</strong> interactive, facilitant l'intégration pour les services tiers sans nécessiter de rédaction manuelle de documentation. L'enjeu principal de ce travail réside dans l'industrialisation du <strong>Machine Learning</strong> (<strong>MLOps</strong>). Passer d'un environnement de recherche à un <strong>microservice</strong> stable et isolable est une étape critique que ce projet adresse directement, offrant une base solide pour des cycles de <strong>déploiement continu</strong> et une <strong>scalabilité</strong> accrue.</p>
         </div>
+        <img src="../assets/images/persoprojectml.png" class="project-img" alt="ML FastAPI Docker Project" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 6px;">
         <hr class="section-divider">
     </section>
     <!-- Topic Modeling Youtube -->
     <section id="topic-modeling" class="project-section">
-    <h2 class="project-title bodoni" id="topic-title">YouTube Topic Modeling</h2>
-    
-    <p class="small-text-poppins-justified" id="topic-desc">
-        This project involves extracting and analyzing YouTube video data to identify latent themes using Topic Modeling techniques. By leveraging NLP libraries and algorithms like LDA or BERTopic, the system categorizes large volumes of text into coherent topics, providing insights into viewer sentiment and content trends.
-    </p>
-
-    <img src="../assets/images/topic_modeling.png" class="project-img" alt="YouTube Topic Modeling Project" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 6px;">
-    <img src="../assets/images/topic_modeling2.png" class="project-img" alt="YouTube Topic Modeling Project" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 6px;">
+        <h2 class="project-title bodoni" id="topic-title">YouTube Topic Modeling</h2>
+        <div class="small-text-poppins-justified" id="topic-desc"><p>La stack technique repose sur <strong>Python</strong>, <strong>YouTube Data API v3</strong> et <strong>BERTopic</strong>.\n\n Ce projet, dont l'intégration de <strong>BERTopic</strong> est actuellement en cours de développement en environnement local, consiste à extraire et analyser des données massives issues de <strong>YouTube</strong> pour identifier des thématiques latentes via des techniques de <strong>Topic Modeling</strong>. En exploitant la <strong>YouTube Data API</strong>, le système récupère les métadonnées et les commentaires, traités par des <strong>pipelines NLP</strong> pour le nettoyage et la <strong>tokenisation</strong>. L'objectif est de segmenter des volumes importants de texte en catégories cohérentes grâce à des algorithmes de <strong>Deep Learning</strong>.</p>\n<p>Le choix méthodologique privilégie une approche basée sur les <strong>embeddings</strong> de transformateurs. L'utilisation de <strong>BERTopic</strong> permet de capturer le contexte sémantique des phrases, dépassant les limites des modèles classiques de <strong>sac de mots</strong>. Le prétraitement des données assure que seuls les termes porteurs de sens influencent la création des <strong>clusters</strong>. Cette architecture transforme des données brutes non structurées en vecteurs numériques exploitables pour la détection automatique de sujets émergents, permettant une analyse fine des interactions textuelles sous les contenus vidéo.</p>\n<p>L'analyse prévoit une phase de visualisation des <strong>intertopic distance maps</strong> et de l'importance des <strong>c-TF-IDF</strong> pour caractériser chaque sujet identifié. Bien que le projet soit toujours en cours de finalisation, l'enjeu reste de fournir une solution d'intelligence économique pour le <strong>trend mapping</strong>. En automatisant l'extraction de connaissances à partir de sources vidéo, ce travail démontre une capacité à passer de la collecte de données brutes à une <strong>analyse sémantique</strong> complexe pour la compréhension des dynamiques d'audience à grande échelle.</p>
+        </div>
+        <img src="../assets/images/topic_modeling.png" class="project-img" alt="YouTube Topic Modeling Project" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 6px;">
+        <img src="../assets/images/topic_modeling2.png" class="project-img" alt="YouTube Topic Modeling Project" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 6px;">
         <hr class="section-divider">
     </section>
     <!-- Musée VR -->
@@ -109,16 +157,14 @@
     </section>
     <!-- AI x Maths -->
     <section id="aixmath" class="project-section">
-    <h2 class="project-title bodoni" id="aixmath-title">AIxMath</h2>
-    
-    <p class="small-text-poppins-justified" id="aixmath-desc">
-        AIxMath is a project at the intersection of Artificial Intelligence and advanced mathematics. It explores the use of neural networks to solve complex mathematical problems and optimize numerical computations. The project highlights the synergy between algorithmic rigor and machine learning flexibility to tackle challenges in symbolic regression and mathematical modeling.
-    </p>
-
-    <img src="../assets/images/aixmath1.png" class="project-img" alt="AIxMath Project Preview" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 6px;">
-    <img src="../assets/images/aixmath2.png" class="project-img" alt="AIxMath Project Preview" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 6px;">
+        <h2 class="project-title bodoni" id="aixmath-title">AIxMath</h2>
+        <p class="small-text-poppins-justified" id="aixmath-desc">
+            AIxMath est un projet à l'intersection de l'Intelligence Artificielle et des mathématiques avancées. Il explore l'utilisation des réseaux de neurones pour résoudre des problèmes mathématiques complexes et optimiser les calculs numériques. Le projet met en avant la synergie entre la rigueur algorithmique et la flexibilité du machine learning pour relever des défis en régression symbolique et modélisation mathématique.
+        </p>
+        <img src="../assets/images/aixmath1.png" class="project-img" alt="AIxMath Project Preview" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 6px;">
+        <img src="../assets/images/aixmath2.png" class="project-img" alt="AIxMath Project Preview" style="border: 1px solid rgba(255,255,255,0.15); border-radius: 6px;">
         <hr class="section-divider">
-</section>
+    </section>
     <!-- Port'On Mask -->
     <section id="porton-mask" class="project-section">
         <h2 class="project-title bodoni" id="porton1">Port'On Mask</h2>
@@ -185,5 +231,52 @@
     </a>
 </div>
 <script src="../assets/js/flags.js"></script>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Image agrandie">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">&#x2715;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+    (function () {
+        const overlay   = document.getElementById('lightbox');
+        const lightImg  = document.getElementById('lightboxImg');
+        const closeBtn  = document.getElementById('lightboxClose');
+
+        // Open lightbox
+        function openLightbox(src, alt) {
+            lightImg.src = src;
+            lightImg.alt = alt || '';
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close lightbox
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => { lightImg.src = ''; }, 300);
+        }
+
+        // Attach click to all project images
+        document.querySelectorAll('.project-img, .project-img-half').forEach(img => {
+            img.addEventListener('click', () => openLightbox(img.src, img.alt));
+        });
+
+        // Close on overlay click (not image click)
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) closeLightbox();
+        });
+
+        // Close button
+        closeBtn.addEventListener('click', closeLightbox);
+
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && overlay.classList.contains('active')) closeLightbox();
+        });
+    })();
+</script>
 </body>
 </html>
