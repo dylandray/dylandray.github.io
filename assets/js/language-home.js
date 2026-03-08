@@ -11,7 +11,7 @@ const translations = {
         acc4Title: "Languages",
         acc5Title: "Interests (Non-tech)",
 
-        acc1Body: "From Marseille to the world, building the future through technology. As a Data & AI Engineering graduate from ESILV Paris, I combine scientific rigor with a business-impact vision. My experience across France, Japan, and the U.S. has enabled me to master the full data lifecycle from collection to production, as well as core AI and Machine Learning concepts.",
+        acc1Body: "From Marseille to the world: technical excellence dedicated to ambitious projects. \n As a Data & AI Engineering graduate from ESILV Paris, I combine scientific rigor with a business-impact vision. My experience across France, Japan, and the U.S. has enabled me to master the full data lifecycle from collection to production, as well as core AI and Machine Learning concepts.",
         acc1HighlightsLabel: "Highlights",
         acc1H1Title: '"Business Impact" Award:',
         acc1H1Body: "Winner of the annual Bosch AI hackathon among ~100 participants, for turning complex business needs into automation tools.",
@@ -93,7 +93,7 @@ const translations = {
         lang4Name: "Spanish", lang4Level: "Conversational",
         lang5Name: "Chinese", lang5Level: "Next learning goal",
 
-        passion1: "<strong style='display:block; margin-bottom:0.4rem; font-size:1.05em;'>Travel & Discovering new cultures</strong><ul style='margin: 0; padding-left: 1.2rem; opacity: 0.85; line-height: 1.6;'><li>USA (Visited 20/51 states)</li><li>Japan (Visited 23/47 prefectures)</li><li>Lebanon, Italy, Spain, England, Morocco, Taiwan, South Korea</li></ul>",
+        passion1: "<strong style='display:block; margin-bottom:0.4rem; font-size:1.05em;'>Travel & Discovering new cultures</strong><ul style='margin: 0; padding-left: 1.2rem; opacity: 0.85; line-height: 1.6;'><li>USA & Japan: In-depth exploration of regional diversity (over half of the territory covered via solo road trips).</li><li>Taiwan, South Korea, Lebanon, Israel, Europe, Morocco</li>",
         passion2: "Gastronomy | From fine dining to street food",
         passion3: "Playing & Developing video games",
         passion4: "Weightlifting",
@@ -118,7 +118,7 @@ const translations = {
         acc4Title: "Langues",
         acc5Title: "Centres d'intérêt (Hors tech)",
 
-        acc1Body: "De Marseille à l'international, bâtir le monde de demain avec la tech. Diplômé ingénieur en Data &amp; Intelligence Artificielle de l'ESILV Paris, j'allie rigueur scientifique et vision orientée impact business. Mon parcours entre la France, le Japon et les États-Unis m'a permis de maîtriser le cycle de vie complet de la donnée, de la collecte à la mise en production, ainsi que les concepts d'IA (Machine Learning notamment).",
+        acc1Body: "De Marseille à l'international : l'exigence technique au service de projets ambitieux.\n\nDiplômé ingénieur en Data &amp; Intelligence Artificielle de l'ESILV Paris, j'allie rigueur scientifique et vision orientée impact business. Mon parcours entre la France, le Japon et les États-Unis m'a permis de maîtriser le cycle de vie complet de la donnée, de la collecte à la mise en production, ainsi que les concepts d'IA (Machine Learning notamment).",
         acc1HighlightsLabel: "Faits marquants",
         acc1H1Title: 'Prix "Business Impact" :',
         acc1H1Body: "Lauréat du hackathon annuel Bosch AI parmi ~100 participants, pour la transformation de besoins métiers complexes en outils d'automatisation.",
@@ -200,7 +200,7 @@ const translations = {
         lang4Name: "Espagnol", lang4Level: "Conversationnel",
         lang5Name: "Chinois", lang5Level: "Prochain objectif",
 
-        passion1: "<strong style='display:block; margin-bottom:0.4rem; font-size:1.05em;'>Voyage & découverte de cultures</strong><ul style='margin: 0; padding-left: 1.2rem; opacity: 0.85; line-height: 1.6;'><li>États-Unis (20/51 états)</li><li>Japon (23/47 préfectures)</li><li>Liban, Italie, Espagne, Angleterre, Maroc, Taïwan, Corée du Sud</li></ul>",
+        passion1: "<strong style='display:block; margin-bottom:0.4rem; font-size:1.05em;'>Voyage & découverte de cultures</strong><ul style='margin: 0; padding-left: 1.2rem; opacity: 0.85; line-height: 1.6;'><li>États-Unis & Japon : Exploration approfondie de la diversité régionale (plus de la moitié du territoire parcouru en roadtrip seul).</li><li>Taïwan, Corée du Sud, Liban, Israel, Europe, Maroc</li></ul>",
         passion2: "Gastronomie | De la haute cuisine à la cuisine de rue",
         passion3: "Création & pratique de jeux vidéo",
         passion4: "Musculation",
