@@ -1,7 +1,7 @@
 const translations = {
     en: {
         studentInfo: "AI Engineer & Data Scientist with international experience (France, Japan, USA), specialized in Data, Machine Learning, GenAI & LLMs.",
-        introText: '"What I love most about my job is seeing people\'s amazement when I present my solutions."',
+        introText: '"Beyond the code, I find my greatest satisfaction in delivering innovative solutions that not only solve problems but fundamentally optimize how businesses operate."',
 
         Homepage: "Homepage", Projects: "My projects", Associatif: "Voluntary", CV: "Resume/CV",
 
@@ -93,7 +93,7 @@ const translations = {
         lang4Name: "Spanish", lang4Level: "Conversational",
         lang5Name: "Chinese", lang5Level: "Next learning goal",
 
-        passion1: "<strong style='display:block; margin-bottom:0.4rem; font-size:1.05em;'>Travel & Discovering new cultures</strong><ul style='margin: 0; padding-left: 1.2rem; opacity: 0.85; line-height: 1.6;'><li>USA & Japan: In-depth exploration of regional diversity (over half of the territory covered via solo road trips).</li><li>Taiwan, South Korea, Lebanon, Israel, Europe, Morocco</li>",
+        passion1: "<strong style='display:block; margin-bottom:0.4rem; font-size:1.05em;'>Travel & Cultural Immersion</strong><ul style='margin: 0; padding-left: 1.2rem; opacity: 0.85; line-height: 1.6;'><li><strong>USA & Japan:</strong> In-depth exploration of regional diversity through solo road trips (independently planned and executed from A to Z).</li><li><strong>International:</strong> Asia (Taiwan, South Korea), the Middle East (Lebanon, Israel), Morocco, and Europe.</li></ul>",
         passion2: "Gastronomy | From fine dining to street food",
         passion3: "Playing & Developing video games",
         passion4: "Weightlifting",
@@ -108,7 +108,7 @@ const translations = {
 
     fr: {
         studentInfo: "Ingénieur IA & Data Scientist avec une expérience internationale (France, Japon, USA), spécialisé en Data, Machine Learning, IA Générative & LLMs.",
-        introText: '"Ce que j\'aime le plus dans mon métier, c\'est de voir l\'émerveillement des gens quand je présente mes solutions.',
+        introText: '"Au-delà de la technique, ma plus grande satisfaction est de livrer des solutions innovantes qui ne se contentent pas de résoudre un problème, mais optimisent fondamentalement les processus métiers."',
 
         Homepage: "Accueil", Projects: "Mes projets", Associatif: "Associatif", CV: "CV/Resume",
 
@@ -200,7 +200,7 @@ const translations = {
         lang4Name: "Espagnol", lang4Level: "Conversationnel",
         lang5Name: "Chinois", lang5Level: "Prochain objectif",
 
-        passion1: "<strong style='display:block; margin-bottom:0.4rem; font-size:1.05em;'>Voyage & découverte de cultures</strong><ul style='margin: 0; padding-left: 1.2rem; opacity: 0.85; line-height: 1.6;'><li>États-Unis & Japon : Exploration approfondie de la diversité régionale (plus de la moitié du territoire parcouru en roadtrip seul).</li><li>Taïwan, Corée du Sud, Liban, Israel, Europe, Maroc</li></ul>",
+        passion1: "<strong style='display:block; margin-bottom:0.4rem; font-size:1.05em;'>Voyages & Immersion Culturelle</strong><ul style='margin: 0; padding-left: 1.2rem; opacity: 0.85; line-height: 1.6;'><li><strong>États-Unis & Japon :</strong> Exploration approfondie de la diversité régionale en totale autonomie (conception d'itinéraires et road trips en solitaire de A à Z).</li><li><strong>International :</strong> Immersion socioculturelle et sens de l'adaptation à travers l'Asie (Taïwan, Corée du Sud), le Moyen-Orient (Liban, Israël), le Maroc et l'Europe.</li></ul>",
         passion2: "Gastronomie | De la haute cuisine à la cuisine de rue",
         passion3: "Création & pratique de jeux vidéo",
         passion4: "Musculation",
