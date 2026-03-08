@@ -33,58 +33,266 @@
             <h1 class="site-title">
                 <a href="index.html" class="hidden-link-large">Dylan Dray</a>
             </h1>
-            <p id="studentInfo" class="tagline">Ingénieur en IA avec expérience internationale (France, Japon, États-Unis), spécialisé en Data, Machine Learning, IA générative &amp; LLM. Communication claire, curiosité, autonomie et forte adaptabilité.</p>
-            <p id="introText" class="intro-text">Sur ce site : mes projets, mes engagements associatifs et mon CV.</p>
+            <p id="studentInfo" class="tagline">Ingénieur IA &amp; Data Scientist · Paris — France, Japon, États-Unis</p>
+            <p id="introText" class="intro-text">"What I love most about my field is seeing people's amazement when I present my solutions."</p>
         </div>
     </div>
 
-    <div class="divider"></div>
-
-    <!-- Accordion sections -->
     <div class="sections">
 
-        <div class="accordion">
+        <div class="accordion open">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span id="acc1Title" class="accordion-title">De Marseille à l'international</span>
+                <span id="acc1Title" class="accordion-title">Vision &amp; Réalisations</span>
                 <span class="accordion-icon">+</span>
             </div>
             <div class="accordion-body">
-                <p id="acc1Body">De Marseille à l'international, j'ai construit un profil d'ingénieur IA agile et tourné vers le résultat. Mon expérience à l'étranger a affiné ma vision : utiliser la donnée non pas comme une fin, mais comme un outil de transformation majeur. Qu'il s'agisse d'optimiser la détection d'anomalies industrielles ou de déployer des architectures LLM, je m'efforce de créer des outils qui surprennent par leur efficacité et leur simplicité d'usage.</p>
+                <p id="acc1Body">De Marseille à l'international — bâtir l'IA de demain. Diplômé ingénieur en Data &amp; Intelligence Artificielle de l'ESILV Paris, j'allie rigueur scientifique et vision orientée impact business. Mon parcours entre la France, le Japon et les États-Unis m'a permis de maîtriser le cycle de vie complet de la donnée, de la collecte à la mise en production.</p>
             </div>
         </div>
 
         <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span id="acc2Title" class="accordion-title">Expertise Technique &amp; Parcours</span>
+                <span id="acc2Title" class="accordion-title">Parcours</span>
                 <span class="accordion-icon">+</span>
             </div>
             <div class="accordion-body">
-                <p id="acc2Body">Mon expérience s'est forgée à travers des projets d'envergure internationale. <strong>IA &amp; Deep Learning :</strong> expert en détection d'anomalies (97 % de précision) et en IA Générative — systèmes RAG et fine-tuning de LLMs. <strong>Software Engineering :</strong> profil full-stack de la donnée, entre web scraping, bases SQL et interfaces Flask.</p>
+                <div class="tri-timeline">
+
+                    <div class="tri-col">
+                        <div class="tri-col-header" id="colFormation">Formation</div>
+
+                        <div class="tri-entry">
+    <span class="tri-org" id="edu2Title">ESILV Paris ...</span>
+    
+    <div class="tri-role">
+        <p class="tri-period" id="edu2Period">Sept 2022 — Avr 2026</p>
+        <p class="tri-title" id="edu2Sub">Master Ingénieur — Data &amp; IA</p>
+        <p class="tri-desc" id="edu2Desc">Cours enseignés en anglais...</p>
+    </div>
+
+    <div class="tri-role">
+        <span class="tri-org" id="edu3Title" style="margin-bottom: 0.3rem; margin-top: 0.1rem;">Univ. of Virginia Wise, USA ...</span>
+        <p class="tri-period" id="edu3Period">Août — Déc 2024</p>
+        <p class="tri-title" id="edu3Sub">Échange international — Computer Science</p>
+        <p class="tri-desc" id="edu3Desc">Semestre d’échange...</p>
+    </div>
+</div>
+
+                        <div class="tri-entry">
+                            <span class="tri-org" id="edu1Title">Lycée Jean Perrin, Marseille <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg" class="emoji-flag" alt="FR"></span>
+                            <div class="tri-role">
+                                <p class="tri-period">2020 — 2022</p>
+                                <p class="tri-title" id="edu1Sub">Classes Préparatoires aux Grandes Ecoles (CPGE) PTSI/PT</p>
+                                <p class="tri-desc" id="edu1Desc"></p>
+                            </div>
+                        </div>
+
+                        <div class="tri-entry">
+                            <span class="tri-org" id="edu0Title">Lycée Jean Perrin <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg" class="emoji-flag" alt="FR"></span>
+                            <div class="tri-role">
+                                <p class="tri-period">2020</p>
+                                <p class="tri-title" id="edu0Sub">Bac S-SI option ISN · Mention Bien</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tri-col">
+                        <div class="tri-col-header" id="colExperience">Expérience professionnelle</div>
+
+                        <div class="tri-entry">
+                            <span class="tri-org" id="exp1Title">Bosch Corporation, Tokyo <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1ef-1f1f5.svg" class="emoji-flag" alt="JP"></span>
+                            <div class="tri-role">
+                                <p class="tri-period" id="exp1Period">Mai — Nov 2025</p>
+                                <p class="tri-title" id="exp1Sub">Data Scientist · Stage de fin d'études</p>
+                                <p class="tri-desc" id="exp1Desc">Pipelines de données &amp; CI/CD, Power BI, mise en production d'API Flask, vulgarisation technique pour équipes japonaises. Lauréat hackathon Bosch AI.</p>
+                            </div>
+                        </div>
+
+                        <div class="tri-entry">
+                            <span class="tri-org" id="exp2Title">EDF Lab, Paris-Saclay <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg" class="emoji-flag" alt="FR"></span>
+                            <div class="tri-role">
+                                <p class="tri-period" id="exp2Period">Avr — Août 2024</p>
+                                <p class="tri-title" id="exp2Sub">Ingénieur R&amp;D IA Générative · Stage</p>
+                                <p class="tri-desc" id="exp2Desc">Déploiement d'outils GenAI, fine-tuning de LLMs, Prompt Engineering et applications multimodales.</p>
+                            </div>
+                        </div>
+
+                        <div class="tri-entry">
+                            <span class="tri-org" id="exp3Title">Anacours <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg" class="emoji-flag" alt="FR"></span>
+                            <div class="tri-role">
+                                <p class="tri-period">2022 — 2024</p>
+                                <p class="tri-title" id="exp3Sub">Professeur particulier</p>
+                                <p class="tri-desc" id="exp3Desc">Cours de mathématiques, physique et informatique auprès d'élèves du secondaire.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tri-col">
+                        <div class="tri-col-header" id="colVolontariat">Associations</div>
+
+                        <div class="tri-entry">
+                            <span class="tri-org" id="vol1Title">Léo&amp;Co <span class="flag">🐶</span></span>
+                            
+                            <div class="tri-role">
+                                <p class="tri-period">2022 — 2024</p>
+                                <p class="tri-title" id="vol1Sub"></p>
+                                <p class="tri-desc" id="vol1Desc"></p>
+                            </div>
+                        </div>
+
+                        <div class="tri-entry">
+                            <span class="tri-org" id="vol3Title">ESN DeVinci <span class="flag">🌍🤝</span></span>
+                            <div class="tri-role">
+                                <p class="tri-period">2023 — 2024</p>
+                                <p class="tri-title" id="vol3Sub">Responsable Partenariats</p>
+                                <p class="tri-desc" id="vol3Desc"></p>
+                            </div>
+                        </div>
+
+                        <div class="tri-entry">
+                            <span class="tri-org" id="vol2Title">LéoIndieGames <span class="flag">🕹️💻</span></span>
+                            <div class="tri-role">
+                                <p class="tri-period">2021 — 2024</p>
+                                <p class="tri-title" id="vol2Sub">Membre</p>
+                                <p class="tri-desc" id="vol2Desc"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
         <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span id="acc3Title" class="accordion-title">Réalisations &amp; Engagement</span>
+                <span id="acc3Title" class="accordion-title">Compétences Techniques &amp; Humaines</span>
                 <span class="accordion-icon">+</span>
             </div>
             <div class="accordion-body">
-                <p id="acc3Body">Mon travail chez Bosch Corporation à Tokyo a été récompensé par un <em>Business Impact Excellence Award</em>, témoignant de ma capacité à allier rigueur technique et vision stratégique. Mon implication associative et ma veille technologique reflètent ma conviction que le partage de connaissances est le moteur de l'innovation.</p>
+
+                <span class="acc-section-label" id="hardSkillsLabel">Hard Skills</span>
+                <div class="skills-block">
+                    <div class="skill-cell">
+                        <p class="skill-domain" id="skillDomain1">Data Science &amp; IA</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><b><u>Python</u></b></span><span class="skill-tag">Pandas</span><span class="skill-tag">Scikit-learn</span><span class="skill-tag">PyTorch</span><span class="skill-tag">TensorFlow</span><span class="skill-tag">NLP</span><span class="skill-tag">LLM &amp; LoRA</span><span class="skill-tag">Finetuning</span><span class="skill-tag">RAG</span><span class="skill-tag"><b><u>SQL</u></b></span>
+                        </div>
+                    </div>
+                    <div class="skill-cell">
+                        <p class="skill-domain" id="skillDomain2">Software Engineering</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><b><u>C++</u></b></span><span class="skill-tag"><b><u>C#</u></b></span><span class="skill-tag">Node.js</span><span class="skill-tag">React</span><span class="skill-tag">Flask</span><span class="skill-tag">FastAPI</span>
+                        </div>
+                    </div>
+                    <div class="skill-cell">
+                        <p class="skill-domain" id="skillDomain3">Infrastructure &amp; Ops</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><b><u>Docker</u></b></span><span class="skill-tag">Kubernetes</span><span class="skill-tag">Azure</span><span class="skill-tag">GCP</span><span class="skill-tag"><b><u>Power BI</u></b></span><span class="skill-tag"><b><u>Jira</u></b></span><span class="skill-tag">Scrum</span>
+                        </div>
+                    </div>
+                    <div class="skill-cell">
+                        <p class="skill-domain" id="skillDomain4">Mathématiques</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Probabilités</span><span class="skill-tag">Algorithmique avancée</span><span class="skill-tag">Structures de données</span>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="acc-section-label" id="softSkillsLabel">Soft Skills</span>
+                <div class="soft-block">
+                    <div class="soft-card">
+                        <h4 id="soft1Title">Communication</h4>
+                        <p id="soft1Body">Vulgarisation de concepts complexes pour des interlocuteurs variés — équipes japonaises, clients, direction.</p>
+                    </div>
+                    <div class="soft-card">
+                        <h4 id="soft2Title">Leadership</h4>
+                        <p id="soft2Body">Président de Leo&amp;Co — gestion de 90 membres et organisation d'une mission humanitaire au Maroc.</p>
+                    </div>
+                    <div class="soft-card">
+                        <h4 id="soft3Title">Adaptabilité</h4>
+                        <p id="soft3Body">Expérience multiculturelle fluide entre la France, le Japon et les États-Unis.</p>
+                    </div>
+                    <div class="soft-card">
+                        <h4 id="soft4Title">Travail en équipe</h4>
+                        <p id="soft4Body">Collaboration efficace dans des environnements pluridisciplinaires et internationaux (Japon, France et partenaires globaux).</p>
+                    </div>
+                    <div class="soft-card">
+                        <h4 id="soft5Title">Curiosité</h4>
+                        <p id="soft5Body">Volonté d'apprendre en continu, démontrée par mon investissement en IA Générative et l'apprentissage de nouvelles langues.</p>
+                    </div>
+                    <div class="soft-card">
+                        <h4 id="soft6Title">Proactivité</h4>
+                        <p id="soft6Body">Force de proposition récompensée par le prix "Business Impact" chez Bosch pour avoir transformé des besoins complexes en solutions concrètes.</p>
+                    </div>
+                    <div class="soft-card">
+                        <h4 id="soft7Title">Autonomie</h4>
+                        <p id="soft7Body">Capacité à piloter le cycle de vie de la donnée de A à Z, de la modélisation mathématique jusqu'au déploiement (Docker/Kubernetes).</p>
+                    </div>
+                    <div class="soft-card">
+                        <h4 id="soft8Title">Rigoureux</h4>
+                        <p id="soft8Body">Approche scientifique et méthodique garantissant la fiabilité des livrables (ex. 97 % de précision sur les modèles déployés).</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <div class="accordion">
             <div class="accordion-header" onclick="toggleAccordion(this)">
-                <span id="acc4Title" class="accordion-title">Profil Polyglotte &amp; Ouverture</span>
+                <span id="acc4Title" class="accordion-title">Langues</span>
                 <span class="accordion-icon">+</span>
             </div>
             <div class="accordion-body">
-                <p id="acc4Body">Travailler entre la France, le Japon et les États-Unis a affiné ma capacité d'adaptation. Je travaille quotidiennement en français et en anglais, avec une maîtrise avancée du japonais et des bases d'espagnol. Passionné de gastronomie, de jeux vidéo, de sport et engagé pour la cause animale.</p>
+                <div class="lang-block">
+                    <div class="lang-row">
+                        <div class="lang-meta"><span class="lang-name" id="lang1Name">Français</span><span class="lang-level" id="lang1Level">Maternel</span></div>
+                        <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+                    </div>
+                    <div class="lang-row">
+                        <div class="lang-meta"><span class="lang-name" id="lang2Name">Anglais</span><span class="lang-level" id="lang2Level">C1 · TOEFL ITP</span></div>
+                        <div class="lang-bar"><div class="lang-fill" style="width:90%"></div></div>
+                    </div>
+                    <div class="lang-row">
+                        <div class="lang-meta"><span class="lang-name" id="lang3Name">Japonais</span><span class="lang-level" id="lang3Level">Intermédiaire · préparation JLPT N3</span></div>
+                        <div class="lang-bar"><div class="lang-fill" style="width:50%"></div></div>
+                    </div>
+                    <div class="lang-row">
+                        <div class="lang-meta"><span class="lang-name" id="lang4Name">Espagnol</span><span class="lang-level" id="lang4Level">Conversationnel</span></div>
+                        <div class="lang-bar"><div class="lang-fill" style="width:25%"></div></div>
+                    </div>
+                    <div class="lang-row">
+                        <div class="lang-meta"><span class="lang-name" id="lang5Name">Chinois</span><span class="lang-level" id="lang5Level">Prochain objectif</span></div>
+                        <div class="lang-bar"><div class="lang-fill" style="width:1%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span id="acc5Title" class="accordion-title">Centres d'intérêt (Hors tech)</span>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+                <div class="passion-tags">
+                    <div class="passion-tag" id="passion1" style="border-radius: 12px; padding: 0.8rem 1.2rem; width: 100%; box-sizing: border-box;"></div>
+                    
+                    <span class="passion-tag" id="passion2"></span>
+                    <span class="passion-tag" id="passion3"></span>
+                    <span class="passion-tag" id="passion8"></span>
+                    <span class="passion-tag" id="passion10"></span>
+                    <span class="passion-tag" id="passion4"></span>
+                    <span class="passion-tag" id="passion5"></span>
+                    <span class="passion-tag" id="passion6"></span>
+                    <span class="passion-tag" id="passion7"></span>
+                    <span class="passion-tag" id="passion11"></span>
+                    <span class="passion-tag" id="passion9"></span>
+                    
+                </div>
             </div>
         </div>
 
     </div>
-
 </main>
 
 <div class="social-bar">

@@ -3,6 +3,18 @@
    Header, nav, language buttons, social bar → shared.css
    ====================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --accent:       #a78bfa;
+    --accent-dim:   rgba(167,139,250,0.18);
+    --divider:      rgba(255,255,255,0.10);
+    --text-body:    rgba(255,255,255,0.87);
+    --text-muted:   rgba(255,255,255,0.48);
+    --font-display: 'Inter', sans-serif;
+    --font-body:    'Inter', sans-serif;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -10,10 +22,11 @@
 }
 
 body {
-    font-family: "Poppins", "Garamond", sans-serif;
-    background: radial-gradient(ellipse at bottom, black -10%, darkslateblue 105%);
+    font-family: var(--font-body);
+    font-weight: 300;
+    background: radial-gradient(ellipse at bottom, #08000f 0%, #1a0c5c 55%, #0c0025 100%);
     min-height: 100vh;
-    color: white;
+    color: var(--text-body);
     overflow-x: hidden;
 }
 
@@ -40,26 +53,56 @@ body {
 .toc {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    padding: 16px 36px 14px;
+    border: 1px solid var(--divider);
+    border-radius: 18px;
+    background: rgba(255,255,255,0.025);
+    backdrop-filter: blur(8px);
+    line-height: normal;
 }
 
 .toc-divider {
     border: none;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    margin-top: 16px;
+    border-top: 1px solid var(--divider);
+    margin-top: 10px;
 }
 
 .hidden-link-bodoni {
-    font-family: "Garamond", serif;
-    font-size: clamp(14px, 1.5vw, 22px);
-    text-decoration: underline;
-    color: white;
-    transition: opacity 0.2s;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: clamp(13px, 1.25vw, 15.5px);
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: color 0.22s ease, letter-spacing 0.22s ease;
+    position: relative;
+    display: inline-block;
+    padding: 2px 0;
 }
 
-.hidden-link-bodoni:hover { opacity: 0.7; }
+.hidden-link-bodoni::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width 0.28s ease;
+}
+
+.hidden-link-bodoni:hover {
+    color: #fff;
+    letter-spacing: 0.025em;
+    opacity: 1;
+}
+
+.hidden-link-bodoni:hover::after { width: 70%; }
 
 /* ---- Association sections ---- */
 .asso-section {
@@ -78,32 +121,44 @@ body {
 
 .section-divider {
     border: none;
-    border-top: 1px solid rgba(255,255,255,0.3);
     width: 100%;
     margin-top: 20px;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--accent-dim) 25%,
+        var(--accent-dim) 75%,
+        transparent
+    );
 }
 
 /* ---- Typography ---- */
 h1 {
-    font-family: "Garamond", serif;
+    font-family: var(--font-display);
+    font-weight: 700;
     font-size: clamp(20px, 2.5vw, 35px);
-    color: white;
+    color: #fff;
     margin-top: 8px;
+    letter-spacing: -0.02em;
 }
 
 h2 {
-    font-family: "Garamond", serif;
+    font-family: var(--font-display);
+    font-weight: 700;
     font-size: clamp(17px, 2vw, 28px);
-    color: white;
+    color: #fff;
     margin-top: 8px;
+    letter-spacing: -0.01em;
 }
 
 p {
-    font-family: "Garamond", serif;
-    font-size: clamp(14px, 1.4vw, 20px);
-    line-height: 1.7;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: clamp(14px, 1.35vw, 16.5px);
+    line-height: 1.85;
     text-align: justify;
-    color: white;
+    color: var(--text-body);
 }
 
 ul {
@@ -112,11 +167,12 @@ ul {
 }
 
 li {
-    font-family: "Garamond", serif;
-    font-size: clamp(14px, 1.4vw, 20px);
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: clamp(14px, 1.35vw, 16.5px);
     line-height: 1.6;
     margin-bottom: 6px;
-    color: white;
+    color: var(--text-body);
 }
 
 /* ---- Photo rows ---- */
@@ -136,12 +192,13 @@ li {
     border-radius: 4px;
 }
 
-.bodoni  { font-family: "Garamond", serif; }
-.poppins { font-family: "Poppins", sans-serif; }
+.bodoni  { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; }
+.poppins { font-family: var(--font-body); }
 
 /* ---- Responsive: mobile ---- */
 @media (max-width: 600px) {
     .page-content { padding: 56px 16px 60px; }
+    .toc           { padding: 20px 20px 18px; }
     .photo-row { flex-direction: column; align-items: center; }
     .photo-item { max-width: 90%; width: 90%; height: auto; }
 }

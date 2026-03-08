@@ -1,7 +1,4 @@
-/* ======================================================
-   projects.css — Projects page
-   Header, nav, language buttons, social bar → shared.css
-   ====================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
@@ -11,7 +8,6 @@
     padding: 0;
 }
 
-/* ---- CSS variables ---- */
 :root {
     --accent:      #a78bfa;
     --accent-dim:  rgba(167,139,250,0.18);
@@ -31,7 +27,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Flag image paths (relative to pages/) */
 #englishBtn {
     background-image: url('../images/ukus.jpg');
     background-size: cover;
@@ -43,16 +38,13 @@ body {
     background-position: center;
 }
 
-/* ---- Main content wrapper ---- */
 .page-content {
     max-width: 860px;
     margin: 0 auto;
     padding: 72px 28px 100px;
 }
 
-/* ======================================================
-   TABLE OF CONTENTS
-   ====================================================== */
+/* TABLE OF CONTENTS */
 .toc {
     display: flex;
     flex-direction: column;
@@ -111,9 +103,7 @@ section[id] {
     scroll-margin-top: 60px;
 }
 
-/* ======================================================
-   PROJECT SECTIONS
-   ====================================================== */
+/* PROJECT SECTIONS*/
 .project-section {
     display: flex;
     flex-direction: column;
@@ -142,9 +132,7 @@ section[id] {
     align-self: flex-start;
 }
 
-/* ======================================================
-   BODY TEXT
-   ====================================================== */
+/* BODY TEXT*/
 .small-text-poppins,
 .small-text-poppins-justified {
     font-family: var(--font-body);
@@ -160,7 +148,6 @@ section[id] {
     text-align: justify;
 }
 
-/* Rich-text div containers (ML FastAPI, Topic Modeling) */
 .small-text-poppins-justified p {
     margin-bottom: 1.1em;
     text-align: justify;
@@ -181,14 +168,9 @@ section[id] {
     color: #fff;
 }
 
-/* ======================================================
-   LEGACY CLASS ALIASES
-   ====================================================== */
+
 .bodoni  { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; }.poppins { font-family: var(--font-body); }
 
-/* ======================================================
-   IMAGES
-   ====================================================== */
 .project-img {
     width: 100%;
     max-width: 560px;
@@ -204,7 +186,6 @@ section[id] {
                 0 0 0 1px rgba(167,139,250,0.22);
 }
 
-/* ---- PDF embed ---- */
 .pdf-embed {
     width: 100%;
     height: 500px;
@@ -212,9 +193,7 @@ section[id] {
     border-radius: 12px;
 }
 
-/* ======================================================
-   SECTION DIVIDERS
-   ====================================================== */
+
 .section-divider {
     border: none;
     width: 100%;
@@ -229,9 +208,7 @@ section[id] {
     );
 }
 
-/* ======================================================
-   PILLOW IMAGES (side by side)
-   ====================================================== */
+
 .pillow-images {
     display: flex;
     gap: 20px;
@@ -254,9 +231,7 @@ section[id] {
                 0 0 0 1px rgba(167,139,250,0.22);
 }
 
-/* ======================================================
-   RESPONSIVE — MOBILE
-   ====================================================== */
+/* RESPONSIVE — MOBILE */
 @media (max-width: 600px) {
     .page-content  { padding: 60px 18px 72px; }
     .toc           { padding: 20px 20px 18px; }
