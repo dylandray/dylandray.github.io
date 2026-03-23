@@ -24,10 +24,12 @@ const translations = {
         colExperience: "Professional Experience",
         colVolontariat: "Associations",
 
+        edu3Date: "AUG - DEC 2024",
         edu3Title: "Univ. of Virginia, Wise USA <img src=\"https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fa-1f1f8.svg\" class=\"emoji-flag\" alt=\"US\">",
         edu3Sub: "International exchange — Computer Science",
         edu3Desc: "Exchange semester: Computer Science, Software Engineering, Entrepreneurship. Named to the Dean's List (GPA > 3.6)",
         
+        edu2Date: "SEPT 2022 - APR 2026",
         edu2Title: "ESILV Paris <img src=\"https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg\" class=\"emoji-flag\" alt=\"FR\">",
         edu2Sub: "Master's Degree of Engineering : Data & AI, Software Engineering",
         edu2Desc: "Courses taught in English: Data Science, Deep Learning, Machine Learning, Advanced Algorithms, NLP, Software Engineering, Prompt Engineering, React/Node.js, Probability.",
@@ -39,10 +41,12 @@ const translations = {
         edu0Title: "Lycée Jean Perrin, Marseille <img src=\"https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg\" class=\"emoji-flag\" alt=\"FR\">",
         edu0Sub: "Baccalaureate S-SI, ISN option,  with honors",
 
+        exp1Date: "MAY - NOV 2025",
         exp1Title: "<a href=\"https://en.wikipedia.org/wiki/Robert_Bosch_GmbH\" target=\"_blank\">Bosch Corporation, Tokyo</a> <img src=\"https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1ef-1f1f5.svg\" class=\"emoji-flag\" alt=\"JP\">",
         exp1Sub: "Data Scientist, End-of-Study Internship",
         exp1Desc: "Data pipelines & CI/CD, Power BI dashboards, Flask API production deployment, technical communication for Japanese teams. Winner of Bosch AI hackathon.",
         
+        exp2Date: "APR - AUG 2024",
         exp2Title: "<a href=\"https://en.wikipedia.org/wiki/%C3%89lectricit%C3%A9_de_France\" target=\"_blank\">EDF Lab, Paris-Saclay</a> <img src=\"https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg\" class=\"emoji-flag\" alt=\"FR\">",
         exp2Sub: "R&D Engineer in Generative AI, Internship",
         exp2Desc: "Deployment of GenAI tools, LLM fine-tuning, Prompt Engineering and multimodal applications.",
@@ -131,10 +135,12 @@ const translations = {
         colExperience: "Expérience professionnelle",
         colVolontariat: "Associations",
 
+        edu3Date: "Août - Déc 2024",
         edu3Title: "Univ. of Virginia, Wise USA <img src=\"https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fa-1f1f8.svg\" class=\"emoji-flag\" alt=\"US\">",
         edu3Sub: "Échange international — Computer Science",
         edu3Desc: "Semestre d’échange : Computer science, Software Engineering, Entrepreneurship. Nommé sur la Dean's List (GPA > 3.6)",
         
+        edu2Date: "Sept 2022 - Avr 2026",
         edu2Title: "ESILV Paris <img src=\"https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg\" class=\"emoji-flag\" alt=\"FR\">",
         edu2Sub: "Diplôme d'Ingénieur : Data &amp; IA, Software Engineering",
         edu2Desc: "Cours enseignés en anglais : Data Science, Deep Learning, Machine Learning, Advanced Algorithms, NLP, Software Engineering, Prompt Engineering, React/Node.js, Probabilités.",
@@ -146,10 +152,12 @@ const translations = {
         edu0Title: "Lycée Jean Perrin, Marseille <img src=\"https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg\" class=\"emoji-flag\" alt=\"FR\">",
         edu0Sub: "Baccalauréat S-SI option ISN, Mention Bien",
 
+        exp1Date: "Mai - Nov 2025",
         exp1Title: "<a href=\"https://fr.wikipedia.org/wiki/Robert_Bosch_(entreprise)\" target=\"_blank\">Bosch Corporation, Tokyo</a> <img src=\"https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1ef-1f1f5.svg\" class=\"emoji-flag\" alt=\"JP\">",
         exp1Sub: "Data Scientist,  Stage de fin d'études",
         exp1Desc: "Pipelines de données &amp; CI/CD, Power BI, mise en production d'API Flask, vulgarisation technique pour équipes japonaises. Lauréat hackathon Bosch AI.",
         
+        exp2Date: "Avr - Août 2024",
         exp2Title: "<a href=\"https://fr.wikipedia.org/wiki/%C3%89lectricit%C3%A9_de_France\" target=\"_blank\">EDF Lab, Paris-Saclay</a> <img src=\"https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1eb-1f1f7.svg\" class=\"emoji-flag\" alt=\"FR\">",
         exp2Sub: "Ingénieur R&amp;D IA Générative, Stage",
         exp2Desc: "Déploiement d'outils GenAI, fine-tuning de LLMs, Prompt Engineering et applications multimodales.",
@@ -222,12 +230,12 @@ const ids = [
     'acc1H1Title', 'acc1H1Body', 'acc1H2Title', 'acc1H2Body', 'acc1H3Title', 'acc1H3Body',
     'acc2Title',
     'colFormation', 'colExperience', 'colVolontariat',
-    'edu3Title', 'edu3Sub', 'edu3Desc',
-    'edu2Title', 'edu2Sub', 'edu2Desc',
+    'edu3Date','edu3Title', 'edu3Sub', 'edu3Desc',
+    'edu2Date','edu2Title', 'edu2Sub', 'edu2Desc',
     'edu1Title', 'edu1Sub', 'edu1Desc',
     'edu0Title', 'edu0Sub',
-    'exp1Title', 'exp1Sub', 'exp1Desc',
-    'exp2Title', 'exp2Sub', 'exp2Desc',
+    'exp1Date','exp1Title', 'exp1Sub', 'exp1Desc',
+    'exp2Date','exp2Title', 'exp2Sub', 'exp2Desc',
     'exp3Title', 'exp3Sub', 'exp3Desc',
     'vol3Title', 'vol3Sub', 'vol3Desc',
     'vol1Title', 'vol1Sub', 'vol1Desc',
